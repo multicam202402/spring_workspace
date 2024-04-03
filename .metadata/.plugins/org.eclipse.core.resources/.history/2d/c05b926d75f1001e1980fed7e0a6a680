@@ -1,0 +1,12 @@
+package com.sds.springapp.aop;
+
+
+//학생을 정의한다 
+public class Student {
+	
+	public void gotoSchool() {
+		System.out.println("학교에 갑니다");
+	}
+	
+	
+}

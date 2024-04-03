@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 메모리에 올려져서 스프링에 의해 관리될 객체들 등록 -->
+	<bean class="com.sds.springapp.di.FriPan" id="friPan">
+	</bean>
+	
+	<!-- 요리사 객체에 주입시켜줘 -->
+	
+	
+</beans>

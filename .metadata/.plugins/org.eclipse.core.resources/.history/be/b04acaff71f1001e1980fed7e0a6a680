@@ -1,0 +1,13 @@
+package com.sds.springapp.di;
+
+
+public class UseCook {
+	public static void main(String[] args) {
+		//스프링의 설정 파일인 context.xml 을 읽어들여, 해석할 수 있는 객체를 만들자
+		
+		
+		//요리사를 생성하여 일을 시키자 
+		//Cook cook = new Cook();
+		//cook.makeFood();
+	}
+}

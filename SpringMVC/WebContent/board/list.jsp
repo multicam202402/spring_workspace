@@ -50,7 +50,7 @@
 			<tr>
 				<td><%=num--%></td>
 				<td>
-					<a href="/board/detail.do?board_idx=<%=board.getBoard_idx()%>"><%=board.getTitle() %></a>
+					<a href="/board/detail?board_idx=<%=board.getBoard_idx()%>"><%=board.getTitle() %></a>
 				</td>
 				<td><%=board.getWriter() %></td>
 				<td><%=board.getRegdate().substring(0,10) %></td>

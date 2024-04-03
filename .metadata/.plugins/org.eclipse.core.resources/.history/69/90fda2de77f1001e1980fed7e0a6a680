@@ -1,0 +1,5 @@
+package com.sds.springapp.aop;
+
+public interface Instrument {
+
+}

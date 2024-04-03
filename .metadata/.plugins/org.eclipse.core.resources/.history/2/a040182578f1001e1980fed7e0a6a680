@@ -1,0 +1,31 @@
+package com.sds.springapp.aop;
+
+
+//학생을 정의한다 
+public class Student {
+	Instrument bell; //결합도를 낮추기 위해, 상위 자료형을 보유한다. 또한 new 해서는 안된다
+	
+	
+	
+	public void gotoSchool() {
+		System.out.println("학교에 갑니다");
+		bell.sound();
+	}
+	
+	public void study() {
+		System.out.println("수업 시작합니다");
+		bell.sound();
+	}
+	
+	public void haveLunch() {
+		System.out.println("점심 먹어요");
+		bell.sound();
+	}
+	
+	public void goHome() {
+		System.out.println("귀가 해요");
+		bell.sound();
+	}
+}
+
+

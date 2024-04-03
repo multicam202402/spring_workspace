@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 메모리에 올려져서 스프링에 의해 관리될 객체들 등록 -->
+	<bean class="com.sds.springapp.di.FriPan" id="friPan"></bean>
+	
+	<bean class="com.sds.springapp.di.Induction" id="induction"></bean>
+	
+	
+	<!-- 요리사 객체에 주입시켜줘 -->
+	<bean class="com.sds.springapp.di.Cook" id="cook">
+		<!-- 
+			요리사가 보유한 멤버변수인 pan에, FriPan을 주입 
+			스프링은 주입 시, 변수를 직접 접근하지 않고, setter메서드나
+			생성자 메서드를 통해 데이터를 주입한다..아래의 코드에서 
+			property name="pan" 사실 setPan() 세터를 호출
+		-->
+		<property name="pan"  ref="induction"></property>
+	</bean>
+	
+	<!-- aop 관련 빈즈 -->
+	<bean class="com.sds.springapp.aop.Student" id="student"></bean>
+	
+</beans>
+
+
+
+
+
+
+
+
+

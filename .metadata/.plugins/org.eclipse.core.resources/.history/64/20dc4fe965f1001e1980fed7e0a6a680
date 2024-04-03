@@ -1,0 +1,17 @@
+package com.sds.springapp.di;
+
+//요리사를 정의한다 ( 프라이팬을 들고 있는..)
+public class Cook {
+	//has a 관계로 프라이팬을 정의하자 
+	Pan pan; //has a 관계로 보유할 객체는 정확한 하위 자료형을 보유하지 말고, 
+				//상위 자료형으로 가야, 영향을 덜 받게 된다.즉 결합도가 낮아짐
+				//일반적으로 프로그래밍에서 결합도는 낮아야 좋다
+	
+	public Cook() {
+		//pan = new FriPan();
+	}
+	
+	public void makeFood() {
+		pan.boil();
+	}
+}

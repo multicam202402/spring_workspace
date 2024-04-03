@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 개발자는 자바 코드에 가급적이면 new를 하지않고 이 빈 설정 파일을 이용한다.. -->
+	
+	<!-- 프레임웍이 제대로 세팅되었는지 테스트해볼 수 있는 하위 컨트롤러 등록 -->
+	<bean></bean>	
+
+</beans>

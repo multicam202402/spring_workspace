@@ -9,7 +9,7 @@
 //폼의 입력 데이터들을 서버로 전송하자 
 function regist(){
 	$("form").attr({
-		action:"/board/regist.do", 
+		action:"/board/regist", 
 		method:"post"
 	});
 	$("form").submit(); //전송

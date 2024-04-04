@@ -19,12 +19,18 @@
 	
 	<!-- MybatisMemberDAO 등록 -->
 	<bean class="com.sds.springproject.model.member.MybatisMemberDAO" id="mybatisMemberDAO">
-		<property name="manager" ref="mybatisManager"/>
+		<!-- <property name="manager" ref="mybatisManager"/> -->
+	</bean>
+	
+	<bean class="com.sds.springproject.model.bio.MybatisBioDAO" id="mybatisBioDAO">
+		<!-- <property name="manager" ref="mybatisManager"/> -->
 	</bean>
 
 	<!-- 하위 컨트롤러 등록 -->
 	<bean class="com.sds.springproject.controller.RegistController" id="registController">
-		<property name="memberDAO" ref="mybatisMemberDAO"></property>	
+		<property name="manager" ref="mybatisManager"/>
+		<property name="memberDAO" ref="mybatisMemberDAO"/>	
+		<property name="bioDAO" ref="mybatisBioDAO"/>	
 	</bean>
 	 
 	<!--하위 컨트롤러 매핑  

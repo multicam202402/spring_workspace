@@ -5,6 +5,15 @@
 	<!--회원 정보 등록  -->
 	<insert id="insert" parameterType="Member">
 		insert into member(id, pass, name, email) values(#{id}, #{pass}, #{name}, #{email})
+		
+		<selectKey 
+			keyColumn="member_idx" 
+			resultType="int" 
+			keyProperty="member_idx" 
+			order="AFTER">
+			select last_insert_id() as member_idx
+		</selectKey>
 	</insert>	
+
 
 </mapper>

@@ -60,11 +60,20 @@ public class RegistController implements Controller{
 		
 		if(result>0) {
 			//Member 신상정보가 등록되면, 바이오 정보도 넣어주자
-			//Bio bio = new Bio(); //empty 상태 생성
-			//bio.setHeight(Float.parseFloat(request.getParameter("height")));//회원의 신장  값
-			 
 			
-			//bioDAO.insert(bio);
+			Bio bio = new Bio(); //empty 상태 생성
+			bio.setBlood(request.getParameter("blood")); //혈액형
+			bio.setHeight(Float.parseFloat(request.getParameter("height")));//회원의 신장  값
+			bio.setWeight(Float.parseFloat(request.getParameter("weight")));//회원 몸무게 
+			bio.setMember(member);
+			
+			result = bioDAO.insert(sqlSession , bio);//신체 정보도 등록
+			
+			if(result >0) {
+				//둘다 성공했으므로, 트랜잭션을 커밋하다
+				sqlSession.commit();
+			}
+			manager.release(sqlSession); //반납
 			
 			//회원 목록 보여주자 ( 요청을 끊고 redirect)
 			mav.setViewName("redirect:/member/list");

@@ -4,7 +4,7 @@
 
 	<!--회원 정보 등록  -->
 	<insert id="insert" parameterType="Member">
-		insert into member(id, pass, name, email) values(#{title}, #{pass}, #{name}, #{email})
+		insert into member(id, pass, name, email) values(#{id}, #{pass}, #{name}, #{email})
 	</insert>	
 
 </mapper>

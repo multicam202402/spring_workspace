@@ -11,10 +11,21 @@
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/"/>
 		<property name="suffix" value=".jsp"/>
-	</bean>	 
+	</bean>
+	
+		 
+	<!-- MybatisManager 등록 -->
+	<bean class="com.sds.springproject.mybatis.MybatisManager" id="mybatisManager"/>
+	
+	<!-- MybatisMemberDAO 등록 -->
+	<bean class="com.sds.springproject.model.member.MybatisMemberDAO" id="mybatisMemberDAO">
+		<property name="manager" ref="mybatisManager"/>
+	</bean>
 
 	<!-- 하위 컨트롤러 등록 -->
-	<bean class="com.sds.springproject.controller.RegistController" id="registController"></bean>
+	<bean class="com.sds.springproject.controller.RegistController" id="registController">
+		<property name="memberDAO" ref="mybatisMemberDAO"></property>	
+	</bean>
 	 
 	<!--하위 컨트롤러 매핑  
 		스프링이 지원하는 매핑 방식에는 여러가지가 있다..

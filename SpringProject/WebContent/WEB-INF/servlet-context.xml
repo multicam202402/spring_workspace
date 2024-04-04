@@ -25,12 +25,17 @@
 	<bean class="com.sds.springproject.model.bio.MybatisBioDAO" id="mybatisBioDAO">
 		<!-- <property name="manager" ref="mybatisManager"/> -->
 	</bean>
-
+	
+	<!-- 서비스 등록 -->
+	<bean class="com.sds.springproject.model.member.MemberServiceImpl" id="memberServiceImpl">
+		<property name="manager" 			ref="mybatisManager"/>
+		<property name="memberDAO" 	ref="mybatisMemberDAO"/>
+		<property name="bioDAO" 			ref="mybatisBioDAO"/>
+	</bean>
+	
 	<!-- 하위 컨트롤러 등록 -->
 	<bean class="com.sds.springproject.controller.RegistController" id="registController">
-		<property name="manager" ref="mybatisManager"/>
-		<property name="memberDAO" ref="mybatisMemberDAO"/>	
-		<property name="bioDAO" ref="mybatisBioDAO"/>	
+		<property name="memberService" ref="memberServiceImpl"/>
 	</bean>
 	 
 	<!--하위 컨트롤러 매핑  

@@ -42,7 +42,9 @@ $(function(){
 	        	<%Board board = boardList.get(i); %>
 	            <tr>
 	                <td><%=i %></td>
-	                <td><%=board.getTitle() %></td>
+	                <td>
+	                	<a href="/board/detail?board_idx=<%=board.getBoard_idx()%>"><%=board.getTitle() %></a>
+	                </td>
 	                <td><%=board.getWriter() %></td>
 	                <td><%=board.getRegdate()%></td>
 	                <td><%=board.getHit() %></td>

@@ -1,4 +1,8 @@
+<%@page import="com.sds.spring.domain.Board"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
+<%
+	Board board =(Board)request.getAttribute("board");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,24 +12,12 @@
 <%@ include file="../inc/header_link.jsp" %>
 <script type="text/javascript">
 
-	function regist(){
-		$("form").attr({
-			action:"/board/regist", 
-			method:"post"
-		});		
-		$("form").submit();
-	}
-	
-	$(function(){
-		$('#content').summernote({
-			height:200, 
-			placeholder:"내용입력.."
-		});
-		
-		$("#bt_regist").click(()=>{
-			regist();
-		});
+$(function(){
+	$('#content').summernote({
+		height:200, 
+		placeholder:"내용입력.."
 	});
+});
 
 </script>
 </head>
@@ -34,15 +26,15 @@
 	<div class="container mt-5">
 		<form>
 		    <div class="form-group">
-		        <input type="text" class="form-control" placeholder="제목 입력" name="title">
+		        <input type="text" class="form-control" value="<%=board.getTitle() %>" name="title">
 		    </div>
 		    
 		    <div class="form-group">
-		        <input type="text" class="form-control" placeholder="작성자 입력.." name="writer">
+		        <input type="text" class="form-control" value="<%=board.getWriter() %>" name="writer">
 		    </div>
 
 		    <div class="form-group">
-		        <textarea class="form-control" name="content" id="content"></textarea>
+		        <textarea class="form-control" name="content" id="content"><%=board.getContent() %></textarea>
 		    </div>
 		    
 		    <div class="form-group">

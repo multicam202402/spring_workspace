@@ -32,14 +32,25 @@ public class HibernateBoardDAO implements BoardDAO {
 
 	@Override
 	public Board select(int board_idx) {
-		// TODO Auto-generated method stub
-		return null;
+		Session session = manager.getSession();
+		//한건 가져오기
+		Query query=session.createQuery("FROM Board WHERE board_idx = :board_idx", Board.class);
+		
+		Board board =(Board)query.uniqueResult();
+		manager.release(session);
+		
+		return board;
 	}
 
 	@Override
 	public void insert(Board board) {
-		// TODO Auto-generated method stub
+		Session session = manager.getSession();
 		
+		//DML은 트랜잭션 처리
+		session.beginTransaction(); //트랜잭션 시작
+		session.save(board); //DTO의 프로퍼티 값을 db TAble 에 반영
+		session.getTransaction().commit(); //트랜잭션 커밋 
+		manager.release(session);
 	}
 
 	@Override

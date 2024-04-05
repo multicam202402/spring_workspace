@@ -7,7 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.sds.spring.domain.Board;
 import com.sds.spring.model.board.BoardService;
 
 //DefaultAnnotaionHandlerMapping이 , 아래의 클래스를 하위 컨트롤러로 발견하게끔, 어노테이션으로 표시를 해야 한다
@@ -37,7 +39,42 @@ public class BoardController{
 		return "board/write";  //요청 유지 jsp
 	}
 	
+	//글등록 요청 처리
+	@RequestMapping(value="/board/regist", method=RequestMethod.POST)
+	public String regist(Board board){
+		//System.out.println("title "+board.getTitle());
+		//System.out.println("writer "+board.getWriter());
+		//System.out.println("content "+board.getContent());
+		
+		//3단계: 일 시키기 
+		boardService.insert(board);
+		
+		return "redirect:/board/list"; //목록을 재요청을 들어가야 하므로, 요청을 끊는 redirect 시도
+	}
+	
+	//상세보기 요청 처리
+	@RequestMapping(value="/board/detail", method=RequestMethod.GET)
+	public ModelAndView getDetail(int board_idx) {
+		//3단계: 모델에 일 시키기 
+		Board board = boardService.select(board_idx);
+		
+		//4단계: 결과가 있으므로 결과 저장
+		ModelAndView mav = new ModelAndView("board/content");
+		mav.addObject("board", board);
+		
+		return mav;
+	}
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

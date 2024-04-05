@@ -30,5 +30,14 @@ public class BoardController{
 		//View 객체를 따로 만들지 말고, 그냥 String으로 뷰의 이름을 저장하면 자동으로 View 객체에 담김 
 		return "board/list";
 	}
+
+	//글쓰기 폼 요청 
+	@RequestMapping(value="/board/writeform", method=RequestMethod.GET)
+	public String getForm() {
+		return "board/write";  //요청 유지 jsp
+	}
 	
 }
+
+
+

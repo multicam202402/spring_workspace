@@ -11,6 +11,16 @@
 <title>Insert title here</title>
 
 <%@ include file="../inc/header_link.jsp" %>
+<script type="text/javascript">
+$(function(){
+	$("button").click(()=>{
+		//글쓰기 폼 요청 WEB-INF에 들어있는 jsp는 직접 접근 불가능, 반드시 하위컨트롤러를 거쳐야 한다
+		location.href="/board/writeform";   
+	});
+});
+</script>
+
+
 
 </head>
 <body>
@@ -38,6 +48,11 @@
 	                <td><%=board.getHit() %></td>
 	            </tr>
 	            <%} %>
+	            <tr>
+	            	<td colspan="5">
+	            		<button class="btn btn-primary">글쓰기</button>
+	            	</td>
+	            </tr>
 	        </tbody>
 	    </table>
 	</div>

@@ -29,6 +29,9 @@
 		들어있을 경우 ,해당 객체를 스프링 이 자동으로 인스턴스를 생성하여, 컨테이너(ApplicationContext 객체)에서 관리한다
 	 -->	
 	<context:component-scan base-package="com.sds.spring.model"/>
+	
+	<bean class="com.sds.spring.hibernate.HibernateManager" factory-method="getInstance"/>
+	
 </beans>
 
 

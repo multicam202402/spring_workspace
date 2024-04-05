@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- 드라이버 -->
+		
+		<!-- 접속  URL -->
+		
+		<!-- 유저명 -->
+		
+		<!-- 비밀번호 -->
+		
+		<!-- 하이버테네이트 방언  -->
+		
+		<!-- SQL 문 보이게  -->
+		
+		<!-- DTO의 위치 -->
+		
+	</session-factory>
+</hibernate-configuration>

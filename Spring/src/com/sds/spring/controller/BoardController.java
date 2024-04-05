@@ -71,7 +71,18 @@ public class BoardController{
 		//3단계: 일 시키기 
 		boardService.update(board);
 		
-		return "redirect:/board/detail?board_idx="+board.getBoard_idx(); //상세 페이지를 요청을 끊고 redirect로 재요청
+		//상세 페이지를 요청을 끊고 redirect로 재요청
+		return "redirect:/board/detail?board_idx="+board.getBoard_idx(); 
+	}
+	
+	//삭제 요청 처리 
+	@RequestMapping(value="/board/delete", method=RequestMethod.POST)	
+	public String del(Board board) {
+		//3단계: 일 시키기 
+		boardService.delete(board);
+		
+		//목록 재요청 
+		return "redirect:/board/list";
 	}
 }
 

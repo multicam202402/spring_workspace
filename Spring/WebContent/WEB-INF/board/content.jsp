@@ -19,6 +19,14 @@ function edit(){
 	$("form").submit();
 }
 
+function del(){
+	$("form").attr({
+		action:"/board/delete",
+		method:"post"
+	});	
+	$("form").submit();
+}
+
 $(function(){
 	$('#content').summernote({
 		height:200, 

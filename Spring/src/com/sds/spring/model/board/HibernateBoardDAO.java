@@ -64,8 +64,11 @@ public class HibernateBoardDAO implements BoardDAO {
 
 	@Override
 	public void delete(Board board) {
-		// TODO Auto-generated method stub
-		
+		Session session = manager.getSession();
+		session.beginTransaction();
+		session.delete(board);
+		session.getTransaction().commit(); //트랜잭션 커밋
+		manager.release(session);
 	}
 	
 }

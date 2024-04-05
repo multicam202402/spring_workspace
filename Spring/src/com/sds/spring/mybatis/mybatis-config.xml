@@ -4,7 +4,7 @@
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.sds.sprin.domain.Board" 	alias="Board"/>		
+		<typeAlias type="com.sds.spring.domain.Board" 	alias="Board"/>		
 	</typeAliases>
 	
 	<environments default="development">

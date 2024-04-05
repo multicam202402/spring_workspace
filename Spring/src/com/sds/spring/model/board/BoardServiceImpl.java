@@ -3,6 +3,7 @@ package com.sds.spring.model.board;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.sds.spring.domain.Board;
@@ -13,6 +14,7 @@ public class BoardServiceImpl implements BoardService{
 	
 	//어노테이션으로 주입을 표시
 	@Autowired
+	@Qualifier("mybatisBoardDAO")
 	private BoardDAO boardDAO;
 	
 	

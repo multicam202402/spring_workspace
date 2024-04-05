@@ -30,7 +30,8 @@
 	 -->	
 	<context:component-scan base-package="com.sds.spring.model"/>
 	
-	<bean class="com.sds.spring.hibernate.HibernateManager" factory-method="getInstance"/>
+	<bean class="com.sds.spring.hibernate.HibernateManager" 	factory-method="getInstance"/>
+	<bean class="com.sds.spring.mybatis.MybatisManager" 		factory-method="getInstance"/>
 	
 </beans>
 

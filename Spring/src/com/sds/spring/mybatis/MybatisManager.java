@@ -18,7 +18,7 @@ public class MybatisManager {
 	
 	//1) 외부의 어느 누구도 생성자 호출은 불가함
 	private MybatisManager() {
-		String resource = "com/sds/springproject/mybatis/mybatis-config.xml";
+		String resource = "com/sds/spring/mybatis/mybatis-config.xml";
 		InputStream is=null;
 		try {
 			is = Resources.getResourceAsStream(resource);

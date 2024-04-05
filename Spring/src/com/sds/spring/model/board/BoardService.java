@@ -1,7 +1,9 @@
 package com.sds.spring.model.board;
 
 import java.util.List;
+
 import com.sds.spring.domain.Board;
+import com.sds.spring.exception.BoardDMLException;
 
 /*
  * 하위 컨트롤러가, 서비스를 이용할때 서로 간 결합도가 낮아야 하므로  DI구현을 위해 서비스 객체 조차 

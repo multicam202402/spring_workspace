@@ -5,11 +5,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sds.spring.domain.Board;
+import com.sds.spring.exception.BoardDMLException;
 import com.sds.spring.model.board.BoardService;
 
 //DefaultAnnotaionHandlerMapping이 , 아래의 클래스를 하위 컨트롤러로 발견하게끔, 어노테이션으로 표시를 해야 한다
@@ -83,6 +85,17 @@ public class BoardController{
 		
 		//목록 재요청 
 		return "redirect:/board/list";
+	}
+	
+	
+	//이 컨트롤러의 메서드에서 만일 예외가 발생하면, 아래의 메서드가 자동호출됨
+	@ExceptionHandler(BoardDMLException.class)
+	public ModelAndView handle(BoardDMLException e) {
+		
+		//개발자가 런타임 예외에 심어놓은 메시지를 꺼낼때는 e.getMessage() 메서드 사용 
+		System.out.println("예외 발생 "+ e.getMessage());
+		
+		return null;
 	}
 }
 

@@ -35,7 +35,7 @@ public class HibernateBoardDAO implements BoardDAO {
 		Session session = manager.getSession();
 		//한건 가져오기
 		Query query=session.createQuery("FROM Board WHERE board_idx = :board_idx", Board.class);
-		
+		query.setParameter("board_idx", board_idx);
 		Board board =(Board)query.uniqueResult();
 		manager.release(session);
 		

@@ -54,9 +54,9 @@ public class BoardController{
 	
 	//상세보기 요청 처리
 	@RequestMapping(value="/board/detail", method=RequestMethod.GET)
-	public ModelAndView getDetail(int board_idx) {
+	public ModelAndView getDetail(Board dto) {
 		//3단계: 모델에 일 시키기 
-		Board board = boardService.select(board_idx);
+		Board board = boardService.select(dto.getBoard_idx());
 		
 		//4단계: 결과가 있으므로 결과 저장
 		ModelAndView mav = new ModelAndView("board/content");

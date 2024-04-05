@@ -55,8 +55,11 @@ public class HibernateBoardDAO implements BoardDAO {
 
 	@Override
 	public void update(Board board) {
-		// TODO Auto-generated method stub
-		
+		Session session = manager.getSession();
+		session.beginTransaction();
+		session.update(board);
+		session.getTransaction().commit(); //트랜잭션 커밋
+		manager.release(session);
 	}
 
 	@Override

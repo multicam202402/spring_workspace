@@ -64,7 +64,24 @@ public class BoardController{
 		
 		return mav;
 	}
+	
+	//수정 요청 처리 
+	@RequestMapping(value="/board/update", method=RequestMethod.POST)
+	public String edit(Board board) {
+		//3단계: 일 시키기 
+		boardService.update(board);
+		
+		return "redirect:/board/detail?board_idx="+board.getBoard_idx(); //상세 페이지를 요청을 끊고 redirect로 재요청
+	}
 }
+
+
+
+
+
+
+
+
 
 
 

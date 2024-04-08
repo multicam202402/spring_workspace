@@ -45,7 +45,7 @@ public class MybatisBoardDAO implements BoardDAO{
 		}else {
 			//실패했단 사실...
 			System.out.println("예외 발생시킬 예정");
-			new BoardDMLException("글 등록에 실패하였습니다");
+			throw new BoardDMLException("글 등록에 실패하였습니다");
 		}
 		manager.release(sqlSession);
 	}

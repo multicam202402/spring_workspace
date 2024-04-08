@@ -7,7 +7,6 @@
   <title>AdminLTE 3 | Dashboard</title>
 
 	<%@ include file="../inc/header_link.jsp" %>
-	
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -136,6 +135,18 @@
 							</div>
 						</div>
 						
+						<div class="col-md-12">
+							<div class="form-group">
+								파일 선택기 나올 곳
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea id="content" class="form-control"></textarea>
+							</div>
+						</div>
+						
 					</div>	
 					<!-- 입력 폼이 나올 row 끝  -->
 					
@@ -172,5 +183,16 @@
 	
 <%@ include file="../inc/footer_link.jsp" %>	
 
+
 </body>
 </html>
+<script type="text/javascript">
+	$(function(){
+		
+		$("#content").summernote({
+			height:200, 
+			placehodel:"상품 상세 설명 입력"
+		});
+		
+	});
+</script>

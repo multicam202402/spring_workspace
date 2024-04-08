@@ -64,12 +64,13 @@
 			
 				<!-- 카드의 body 영역 begin -->
 				<div class="card-body" style="display: block;">
+					
 					<!-- 카드안의 행 begin -->
 					<div class="row">
 						<!-- 카드안의 열 begin -->	
-						<div class="col-md-12" data-select2-id="30">
+						<div class="col-md-6" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
-								<label>Minimal</label>
+								
 								<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option selected="selected" data-select2-id="3">Alabama</option>
 									<option data-select2-id="35">Alaska</option>
@@ -78,8 +79,67 @@
 							</div>
 						</div>
 						<!-- 카드안의 열 end -->
+						<!-- 카드안의 열 begin -->	
+						<div class="col-md-6" data-select2-id="30">
+							<div class="form-group" data-select2-id="29">
+								
+								<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+									<option selected="selected" data-select2-id="3">Alabama</option>
+									<option data-select2-id="35">Alaska</option>
+									<option data-select2-id="36">California</option>
+								</select>
+							</div>
+						</div>
+						<!-- 카드안의 열 end -->
+						
 					</div>
+					
 					<!-- 카드안의 행 end -->
+					
+					<!-- 입력 폼이 나올 row 시작  -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="상품명">
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="브랜드">
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="가격">
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="form-group">
+								<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+									<option selected="selected" data-select2-id="3">Alabama</option>
+									<option data-select2-id="35">Alaska</option>
+									<option data-select2-id="36">California</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="form-group">
+								<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+									<option selected="selected" data-select2-id="3">Alabama</option>
+									<option data-select2-id="35">Alaska</option>
+									<option data-select2-id="36">California</option>
+								</select>
+							</div>
+						</div>
+						
+					</div>	
+					<!-- 입력 폼이 나올 row 끝  -->
+					
+					
 					<!-- 카드의 푸터 영역 begin -->
 					<div class="card-footer" style="display: block;"></div>
 					<!-- 카드의 푸터 영역 end -->

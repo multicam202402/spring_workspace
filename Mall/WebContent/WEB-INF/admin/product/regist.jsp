@@ -31,12 +31,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">상품등록</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item"><a href="#">상품관리</a></li> 
+              <li class="breadcrumb-item active">상품등록</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -47,11 +47,54 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      	<div class="row">
-			상품 등록 폼...      		
-        </div>
-      </div>
+			
+			<!-- 카드 영역 begin -->
+			<div class="card card-default">
+				<div class="card-header">
+					<h3 class="card-title">Select2 (Default Theme)</h3>
+					<div class="card-tools">
+					<button type="button" class="btn btn-tool" data-card-widget="collapse">
+					<i class="fas fa-minus"></i>
+					</button>
+					<button type="button" class="btn btn-tool" data-card-widget="remove">
+					<i class="fas fa-times"></i>
+					</button>
+					</div>
+				</div>
+			
+				<!-- 카드의 body 영역 begin -->
+				<div class="card-body" style="display: block;">
+					<!-- 카드안의 행 begin -->
+					<div class="row">
+						<!-- 카드안의 열 begin -->	
+						<div class="col-md-12" data-select2-id="30">
+							<div class="form-group" data-select2-id="29">
+								<label>Minimal</label>
+								<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+									<option selected="selected" data-select2-id="3">Alabama</option>
+									<option data-select2-id="35">Alaska</option>
+									<option data-select2-id="36">California</option>
+								</select>
+							</div>
+						</div>
+						<!-- 카드안의 열 end -->
+					</div>
+					<!-- 카드안의 행 end -->
+					<!-- 카드의 푸터 영역 begin -->
+					<div class="card-footer" style="display: block;"></div>
+					<!-- 카드의 푸터 영역 end -->
+					
+				</div>
+				<!-- 카드의 body 영역 end -->			      		
+        	</div>
+        	<!-- 카드 영역 end -->
+        	
+        	
+        	
+      
+      
       <!-- /.container-fluid -->
+      
     </section>
     <!-- /.content -->
   </div>

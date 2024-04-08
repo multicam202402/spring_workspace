@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.sds.mall.product.model.TopCategoryService;
+import com.sds.mall.model.product.TopCategoryService;
 
 //관리자모드에서의 상품 관련 요청 처리 하위 컨트롤러
 @Controller

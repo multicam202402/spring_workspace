@@ -1,4 +1,4 @@
-package com.sds.mall.product.model;
+package com.sds.mall.model.product;
 
 import java.util.List;
 

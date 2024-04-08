@@ -5,10 +5,12 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.sds.mall.domain.TopCategory" 	alias="TopCategory"/>		
+		<typeAlias type="com.sds.mall.domain.SubCategory" 	alias="SubCategory"/>		
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="com/sds/mall/mybatis/TopCategoryMapper.xml" />
+		<mapper resource="com/sds/mall/mybatis/SubCategoryMapper.xml" />
 	</mappers>
 	
 </configuration>

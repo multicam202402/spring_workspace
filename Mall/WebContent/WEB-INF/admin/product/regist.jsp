@@ -77,9 +77,9 @@
 						<div class="col-md-6" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
 								
-								<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+								<select name="top" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<%for(TopCategory topCategory : topList){ %>
-									<option><%=topCategory.getTopname() %></option>
+									<option value="<%=topCategory.getTopcategory_idx()%>"><%=topCategory.getTopname() %></option>
 									<%} %>
 								</select>
 							</div>
@@ -194,6 +194,18 @@
 </body>
 </html>
 <script type="text/javascript">
+	function getSubCategoryList(topcategory_idx){
+		//서버에 하위 카테고리 목록을 요청하되, 비동기 방식으로 요청하자
+		//select * from subcategory where topcategory_idx=3
+		$.ajax({
+			url:"/admin/subcategory/list?topcategory_idx="+topcategory_idx, 
+			type:"GET", 
+			success:function(result, status, xhr){
+				console.log("서버의 응답 정보는 " ,  result);
+			}			
+		});		
+	} 
+	
 	$(function(){
 		
 		$("#content").summernote({
@@ -201,5 +213,23 @@
 			placehodel:"상품 상세 설명 입력"
 		});
 		
+		//상위 카테고리의 아이템을 변경하면... 서브 카테고리 목록 가져오기 
+		$("select[name='top']").change(function(){
+			
+			console.log($(this).val());
+			
+			getSubCategoryList($(this).val());			
+		});
+		
 	});
 </script>
+
+
+
+
+
+
+
+
+
+

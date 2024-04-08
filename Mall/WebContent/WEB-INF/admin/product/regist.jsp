@@ -47,8 +47,9 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      
-        
+      	<div class="row">
+			상품 등록 폼...      		
+        </div>
       </div>
       <!-- /.container-fluid -->
     </section>

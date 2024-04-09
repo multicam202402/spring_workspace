@@ -12,10 +12,18 @@ import com.sds.mall.model.common.FileManager;
 public class ProductServiceImpl implements ProductService{
 	
 	@Autowired
+	private FileManager fileManager; //업로드 담당 객체
+	
+	//db  insert (product, color, psize 세군데 넣어야 하므로 dao도 3개 보유 거느려야 한다)
+	@Autowired
 	private ProductDAO productDAO; //db 담당
 	
 	@Autowired
-	private FileManager fileManager; //업로드 담당 객체
+	private ColorDAO colorDAO;
+	
+	@Autowired
+	private PsizeDAO psizeDAO;
+	
 	
 	//등록 업무 = 파일업로드 + db insert 
 	public void regist(Product product) {

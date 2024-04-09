@@ -50,7 +50,7 @@ public class ProductController {
 		productService.regist(product); //컨트롤러는 서비스에게 추상적으로 업무를 시킬수록 장점이 있다
 		
 		//4단계: 저장할 것이 없고, 상품 목록을 다시 접속하도록 유도..
-		return "admin/product/list"; //404
+		return "redirect:/admin/product/list"; //404
 	}
 	
 }

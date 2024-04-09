@@ -39,6 +39,10 @@ public class FileManager {
 			
 			photo.transferTo(new File(realPath+newName));
 			
+			//새롭게 생성된 파일명을 Product DTO에 심어놓자, Product DTO는 컨트롤러부터 시작하여 모델 영역에서 주소값이
+			//공유되고 있다.. 왜?? 메서드의 매개변수로 계속 전달하고 있기 때문에..
+			product.setFilename(newName);
+			
 		} catch (IllegalStateException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

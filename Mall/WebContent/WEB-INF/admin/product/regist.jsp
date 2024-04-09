@@ -55,6 +55,7 @@
       <div class="container-fluid">
 			
 			<!-- 카드 영역 begin -->
+			<form>
 			<div class="card card-default">
 				<div class="card-header">
 					<h3 class="card-title">Select2 (Default Theme)</h3>
@@ -69,7 +70,7 @@
 				</div>
 			
 				<!-- 카드의 body 영역 begin -->
-				<form>
+				
 				<div class="card-body" style="display: block;">
 					
 					<!-- 카드안의 행 begin -->
@@ -91,7 +92,7 @@
 						<div class="col-md-6" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
 								
-								<select id="sub" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+								<select id="sub" name="subCategory.subcategory_idx" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 								</select>
 							</div>
 						</div>
@@ -105,25 +106,25 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="상품명">
+								<input type="text" class="form-control" placeholder="상품명" name="product_name">
 							</div>
 						</div>
 						
 						<div class="col-md-12">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="브랜드">
+								<input type="text" class="form-control" placeholder="브랜드" name="brand">
 							</div>
 						</div>
 						
 						<div class="col-md-12">
 							<div class="form-group">
-								<input type="number" class="form-control" placeholder="가격">
+								<input type="number" class="form-control" placeholder="가격" name="price">
 							</div>
 						</div>
 						
 						<div class="col-md-6">
 							<div class="form-group">
-								<select multiple class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+								<select name="color_name" multiple class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="Black">Black</option>
 									<option value="White">White</option>
 									<option value="Gray">Gray</option>
@@ -134,7 +135,7 @@
 						
 						<div class="col-md-6">
 							<div class="form-group">
-								<select multiple class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+								<select name="size_name" multiple class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="95">95</option>
 									<option value="100">100</option>
 									<option value="105">105</option>
@@ -145,13 +146,13 @@
 						
 						<div class="col-md-12">
 							<div class="form-group">
-								<input type="file" class="form-control">
+								<input type="file" class="form-control" name="photo">
 							</div>
 						</div>
 						
 						<div class="col-md-12">
 							<div class="form-group">
-								<textarea id="content" class="form-control"></textarea>
+								<textarea id="content" class="form-control" name="detail"></textarea>
 							</div>
 						</div>
 					</div>
@@ -159,7 +160,7 @@
 					<div class="row">						
 						<div class="col-md-2">
 							<div class="form-group">
-								<button class="btn btn-primary form-control" id="bt_regist">등록</button>
+								<button type="button" class="btn btn-primary form-control" id="bt_regist">등록</button>
 								<button class="btn btn-primary form-control" id="bt_list">목록</button>
 							</div>
 						</div>
@@ -172,11 +173,11 @@
 					<!-- 카드의 푸터 영역 end -->
 					
 				</div>
-				</form>
+				
 				<!-- 카드의 body 영역 end -->			      		
         	</div>
         	<!-- 카드 영역 end -->
-        	
+        	</form>
         	
         	
       

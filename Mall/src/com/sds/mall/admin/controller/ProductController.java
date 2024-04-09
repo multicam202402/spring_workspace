@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.sds.mall.model.product.TopCategoryService;
 
@@ -28,5 +29,21 @@ public class ProductController {
 		return "admin/product/regist";
 	}
 	
+	//상품 업로드 요청 처리 (파일이 포함되어 있다)
+	@PostMapping("/admin/product/regist")  // <mvc annotaion driven/> 등록 하면 이러한 속성도 지원함..
+	public String regist() {
+		
+		return null;
+	}
 	
 }
+
+
+
+
+
+
+
+
+
+

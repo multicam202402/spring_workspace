@@ -1,5 +1,6 @@
 package com.sds.mall.admin.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.sds.mall.domain.Color;
 import com.sds.mall.domain.Product;
+import com.sds.mall.domain.Psize;
 import com.sds.mall.model.product.ProductService;
 import com.sds.mall.model.product.TopCategoryService;
 
@@ -45,6 +48,24 @@ public class ProductController {
 		
 		System.out.println("색상 수는 "+color_name.length);
 		System.out.println("사이즈 수는 "+size_name.length);
+		
+		//서비스에게 Product DTO를 전달하기 전에, 넘어온 색상 배열과, 사이즈 배열을 Product DTO안으로
+		//밀어넣어서 한꺼번에 갖고 다니자!!
+		List<Color> colorList = new ArrayList();
+		for(String s : color_name) {
+			Color color = new Color(); //empty DTO
+			color.setColor_name(s);
+		}
+		
+		List<Psize> psizeList = new ArrayList();
+		for(String s : size_name) {
+			Psize psize = new Psize(); //empty DTO
+			psize.setSize_name(s);
+		}		
+		
+		//배열을  List 로 변환한 후, 이 List 들을 Product 에 몰아넣자
+		product.setColorList(colorList);
+		product.setPsizeList(psizeList);
 		
 		//3단계: 서비스에게 일 시키기
 		productService.regist(product); //컨트롤러는 서비스에게 추상적으로 업무를 시킬수록 장점이 있다

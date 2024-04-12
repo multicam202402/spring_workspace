@@ -16,10 +16,10 @@ public class MybatisPsizeDAO implements PsizeDAO{
 	public void insert(Psize psize) throws PsizeException{ //서비스에 전달
 		int result = sqlSessionTemplate.insert("Psize.insert", psize);
 		
-		result=0; //일부러 테스트 목적
+		//result=0; //일부러 테스트 목적
 		
 		if(result <1) {
-			throw new PsizeException("상품의 색상 등록에 실패하였습니다");
+			throw new PsizeException("상품의 사이즈 등록에 실패하였습니다");
 		}
 	}
 	

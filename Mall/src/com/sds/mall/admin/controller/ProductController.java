@@ -55,12 +55,16 @@ public class ProductController {
 		for(String s : color_name) {
 			Color color = new Color(); //empty DTO
 			color.setColor_name(s);
+			//아직 서비스에 의한 insert 이전 시점이므로, 부모에 대한 정보는 없는 상태이다
+			colorList.add(color);
 		}
 		
 		List<Psize> psizeList = new ArrayList();
 		for(String s : size_name) {
 			Psize psize = new Psize(); //empty DTO
 			psize.setSize_name(s);
+			//아직 서비스에 의한 insert 이전 시점이므로, 부모에 대한 정보는 없는 상태이다
+			psizeList.add(psize);
 		}		
 		
 		//배열을  List 로 변환한 후, 이 List 들을 Product 에 몰아넣자

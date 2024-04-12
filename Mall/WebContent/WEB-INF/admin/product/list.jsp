@@ -1,10 +1,8 @@
-<%@page import="com.sds.mall.domain.TopCategory"%>
 <%@page import="java.util.List"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
 	
-	//제너릭으로 선언하여, 아래쪽 코드에서 형변환의 불편함이 없도록 하자 
-	List<TopCategory> topList = (List)request.getAttribute("topList");
+
 %>
 <!DOCTYPE html>
 <html lang="en">

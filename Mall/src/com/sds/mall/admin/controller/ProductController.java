@@ -83,6 +83,17 @@ public class ProductController {
 		return "redirect:/admin/product/list"; //404
 	}
 	
+	//상품 목록요청 처리
+	@GetMapping("/admin/product/list")
+	public String getList(Model model) {
+		//3단계: 목록가져오기 
+		
+		//4단계: 결과 저장 
+		
+		
+		return "admin/product/list";
+	}
+	
 	//컨트롤러는 Service 계층에서 RuntimeException이 발생한 경우, 일종의 이벤트로 감지할 수 있다..
 	//이때, 이 이벤트를 감지하는 메서드를 정의해보자 .. 
 	/*

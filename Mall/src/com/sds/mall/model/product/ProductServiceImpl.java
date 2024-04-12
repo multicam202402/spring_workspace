@@ -10,7 +10,9 @@ import org.springframework.transaction.annotation.Transactional;
 import com.sds.mall.domain.Color;
 import com.sds.mall.domain.Product;
 import com.sds.mall.domain.Psize;
+import com.sds.mall.exception.ColorException;
 import com.sds.mall.exception.ProductException;
+import com.sds.mall.exception.PsizeException;
 import com.sds.mall.model.common.FileManager;
 
 @Service
@@ -35,7 +37,7 @@ public class ProductServiceImpl implements ProductService{
 	//아래의 서비스의 메서드내에서  동작 중인 DAO들의 메서드들 중 단 하나라도 RuntimeException이 발생할 경우 , 아래의 메서드 영역내에서 발생했던 
 	//모든 DML들은 rollback 으로 처리된다..
 	@Transactional(propagation=Propagation.REQUIRED)
-	public void regist(Product product) throws ProductException{
+	public void regist(Product product) throws ProductException, ColorException, PsizeException{ //컨트롤러에 전달
 		
 		//1)파일업로드 시키기 
 

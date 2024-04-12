@@ -33,7 +33,7 @@ public class MybatisProductDAO implements ProductDAO{
 	public void insert(Product product) throws ProductException{ //서비스에 전달 
 		int result = sqlSessionTemplate.insert("Product.insert", product);
 		
-		result=0; //예외 테스트 목적 상 0 
+		//result=0; //예외 테스트 목적 상 0 
 		
 		if(result <1) { // insert 처리 안됨.
 			throw new ProductException("상품이 등록되지 않았습니다");

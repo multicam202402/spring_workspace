@@ -14,7 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
 import com.sds.mall.domain.Color;
 import com.sds.mall.domain.Product;
 import com.sds.mall.domain.Psize;
+import com.sds.mall.exception.ColorException;
 import com.sds.mall.exception.ProductException;
+import com.sds.mall.exception.PsizeException;
 import com.sds.mall.model.product.ProductService;
 import com.sds.mall.model.product.TopCategoryService;
 
@@ -98,14 +100,14 @@ public class ProductController {
 	
 	//현재 컨트롤러 클래스의 요청 처리 메서드들 중, 아래의 예외 자료형에 해당하는 에러가 발생했을때, 
 	//ExceptionHandler 어노테이션이 붙은 메서드가 자동으로 동작하게 되어 있다
-	@ExceptionHandler(ProductException.class)
-	public ModelAndView handle(ProductException e) {
-		 
+	@ExceptionHandler({ProductException.class, ColorException.class, PsizeException.class})
+	public ModelAndView handle(RuntimeException e) {
 		ModelAndView mav = new ModelAndView("admin/error/result");
 		mav.addObject("e", e);//에러 내용 저장하기
 		
 		return mav;
 	}
+
 	
 }
 

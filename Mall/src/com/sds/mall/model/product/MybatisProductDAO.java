@@ -17,10 +17,9 @@ public class MybatisProductDAO implements ProductDAO{
 	//스프링이 제어하기 때문에, 개발자는 오직 SqlSessionTemplate 넘겨받아 사용하기만 하면 됨
 	private SqlSessionTemplate sqlSessionTemplate;
 	
-	@Override
+	//모든 레코드 가져오기
 	public List selectAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return sqlSessionTemplate.selectList("Product.selectAll");
 	}
 
 	@Override

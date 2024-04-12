@@ -86,10 +86,11 @@ public class ProductController {
 	//상품 목록요청 처리
 	@GetMapping("/admin/product/list")
 	public String getList(Model model) {
-		//3단계: 목록가져오기 
+		//3단계: 목록 가져오기
+		List productList = productService.selectAll();
 		
-		//4단계: 결과 저장 
-		
+		//4단계: 결과 저장
+		model.addAttribute("productList", productList);
 		
 		return "admin/product/list";
 	}

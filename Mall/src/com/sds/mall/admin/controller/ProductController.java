@@ -31,7 +31,7 @@ public class ProductController {
 	private ProductService productService;
 	
 	//상품 등록폼 요청 처리 
-	@GetMapping("/admin/product/registform") 
+	@GetMapping("/product/registform") 
 	public String getRegistForm(Model model) {
 		//3단계: 모델에 일 시키기 
 		List topList = topCategoryService.selectAll();

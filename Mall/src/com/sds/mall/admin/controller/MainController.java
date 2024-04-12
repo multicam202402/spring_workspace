@@ -13,6 +13,7 @@ public class MainController {
 	//<mvc:annotation-driven/> 등록 한 후 부터는 Spring MVC에서 컨트롤러 영역의 많은 기능을 
 	//지원해줌..따라서 아래의 매핑도 줄여쓸 수 있다..
 	//@RequestMapping(value="", RequestMethod.GET)
+	//web.xml 에 작성한 풀 경로를 그대로 적자
 	@GetMapping("/admin")
 	public String getMain() {
 		

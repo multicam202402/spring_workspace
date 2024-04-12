@@ -43,7 +43,7 @@ public class ProductController {
 	}
 	
 	//상품 업로드 요청 처리 (파일이 포함되어 있다)
-	@PostMapping("/admin/product/regist")  // <mvc annotaion driven/> 등록 하면 이러한 속성도 지원함..
+	@PostMapping("/product/regist")  // <mvc annotaion driven/> 등록 하면 이러한 속성도 지원함..
 	public String regist(Product product, String[] color_name, String[] size_name) {
 		System.out.println("하위 카테고리 "+product.getSubCategory().getSubcategory_idx());
 		System.out.println("상품명 "+product.getProduct_name());
@@ -84,7 +84,7 @@ public class ProductController {
 	}
 	
 	//상품 목록요청 처리
-	@GetMapping("/admin/product/list")
+	@GetMapping("/product/list")
 	public String getList(Model model) {
 		//3단계: 목록 가져오기
 		List productList = productService.selectAll();

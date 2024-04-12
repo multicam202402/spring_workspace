@@ -14,7 +14,7 @@ public class MainController {
 	//지원해줌..따라서 아래의 매핑도 줄여쓸 수 있다..
 	//@RequestMapping(value="", RequestMethod.GET)
 	//web.xml 에 작성한 풀 경로를 그대로 적자
-	@GetMapping("/admin")
+	@GetMapping("/main")
 	public String getMain() {
 		
 		return "admin/index";

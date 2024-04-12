@@ -4,11 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.sds.mall.domain.Color;
 import com.sds.mall.domain.Product;
 import com.sds.mall.domain.Psize;
-import com.sds.mall.exception.UploadException;
+import com.sds.mall.exception.ProductException;
 import com.sds.mall.model.common.FileManager;
 
 @Service
@@ -29,7 +31,11 @@ public class ProductServiceImpl implements ProductService{
 	
 	
 	//등록 업무 = 4가지 업무를 완료해야 전체를 성공으로 보는 트랜잭션 상황이다
-	public void regist(Product product) throws UploadException{
+	//전파규칙은 디폴트 값 사용하자, 기존 트랜잭션이 있다면 그 트랜잭션을 이용한다는 옵션이 디폴트..
+	//아래의 서비스의 메서드내에서  동작 중인 DAO들의 메서드들 중 단 하나라도 RuntimeException이 발생할 경우 , 아래의 메서드 영역내에서 발생했던 
+	//모든 DML들은 rollback 으로 처리된다..
+	@Transactional(propagation=Propagation.REQUIRED)
+	public void regist(Product product) throws ProductException{
 		
 		//1)파일업로드 시키기 
 

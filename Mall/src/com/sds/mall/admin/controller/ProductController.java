@@ -6,12 +6,15 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.sds.mall.domain.Color;
 import com.sds.mall.domain.Product;
 import com.sds.mall.domain.Psize;
+import com.sds.mall.exception.UploadException;
 import com.sds.mall.model.product.ProductService;
 import com.sds.mall.model.product.TopCategoryService;
 
@@ -78,7 +81,24 @@ public class ProductController {
 		return "redirect:/admin/product/list"; //404
 	}
 	
+	//컨트롤러는 Service 계층에서 RuntimeException이 발생한 경우, 일종의 이벤트로 감지할 수 있다..
+	//이때, 이 이벤트를 감지하는 메서드를 정의해보자 .. 
+	@ExceptionHandler(UploadException.class)
+	public ModelAndView handle(UploadException e) { //메서드명은 개발자가 정한다
+		//에러의 원인이 된 객체인 e 를 에러 페이지까지 가져가자 
+		ModelAndView mav = new ModelAndView(); //Model과 View를 합쳐놓은 객체이다..만일 
+		//이 방식이 싫다면 분리하여 처리하면 된다..
+		mav.addObject("e", e); //  request.setAttribute("e", e); 와 동일
+		mav.setViewName("admin/error/result");
+		
+		return mav;
+	}
+	
 }
+
+
+
+
 
 
 

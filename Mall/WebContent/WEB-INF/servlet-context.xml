@@ -85,7 +85,7 @@
 			<constructor-arg ref="sqlSessionFactoryBean"/>
 		</bean>			
 			
-		<!-- 파일업로드를 위한 빈 설정  -->
+		<!-- 파일업로드를 위한 빈 설정  Apache fileupload 구현 체 -->
 		<bean id="multipartResolver" 
 			class="org.springframework.web.multipart.commons.CommonsMultipartResolver" 
 			p:maxUploadSize="1048576"/>

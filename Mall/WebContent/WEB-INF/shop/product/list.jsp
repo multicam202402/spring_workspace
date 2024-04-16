@@ -66,7 +66,7 @@
                                                 <ul>
                                                 	<%List<SubCategory> subList = topCategory.getSubList(); %>
                                                 	<%for(SubCategory subCategory  : subList){ %>
-                                                    <li><a href="#"><%=subCategory.getSubname() %></a></li>
+                                                    <li><a href="/product/list?subcategory_idx=<%=subCategory.getSubcategory_idx()%>"><%=subCategory.getSubname() %></a></li>
                                                     <%} %>
                                                 </ul>
                                             </div>

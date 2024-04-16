@@ -29,8 +29,7 @@ public class MybatisProductDAO implements ProductDAO{
 	
 	@Override
 	public List selectAllBySubIdx(int subcategory_idx) {
-		// TODO Auto-generated method stub
-		return null;
+		return sqlSessionTemplate.selectList("Product.selectAllBySubIdx", subcategory_idx);
 	}
 
 	//상품 등록

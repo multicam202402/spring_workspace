@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.sds.mall.domain.Product;
 import com.sds.mall.model.common.FormatManager;
@@ -29,7 +30,7 @@ public class ProductController {
 	
 	//상품 목록 요청 
 	@GetMapping("/product/list")
-	public String getList(Model model, 
+	public ModelAndView getList( 
 			@RequestParam(value="topcategory_idx", defaultValue="0") int topcategory_idx, 
 			@RequestParam(value="subcategory_idx", defaultValue="0") int subcategory_idx
 			) {
@@ -38,7 +39,7 @@ public class ProductController {
 		
 		//product/list.jsp에서도 include가 들어있으므로
 		//, topList 라는 키값을 갖는 List를 심어놓지 않으면  nullpointerException 난다
-		List topList = topCategoryService.selectAll(); //3단계: 카테고리 가져오기 
+		//List topList = topCategoryService.selectAll(); //3단계: 카테고리 가져오기 
 		
 		//3단계: 상품 목록 가져오기 
 		//넘겨받은 topcategory_idx가 0이라면, 아무런 상위 카테고리를 선택하지 않은 경우이므로, 
@@ -53,26 +54,28 @@ public class ProductController {
 			productList = productService.selectAll(); //모든 상품 가져오기 
 		}
 		
+		ModelAndView mav = new ModelAndView();
 		
-		model.addAttribute("topList", topList);//4단계: 결과저장
-		model.addAttribute("productList", productList);//4단계: 결과저장
-		model.addAttribute("formatManager", formatManager);//4단계: 결과저장
+		mav.addObject("productList", productList);//4단계: 결과저장
+		mav.addObject("formatManager", formatManager);//4단계: 결과저장
 		
-		return "shop/product/list";
+		mav.setViewName("shop/product/list");
+		
+		return mav;
 	} 
 	
 	//상품 1건 상세보기 
 	@GetMapping("/product/detail")
-	public String getDetail(Model model, int product_idx) {
-		
-		List topList = topCategoryService.selectAll(); //3단계: 카테고리 가져오기
+	public ModelAndView getDetail(Model model, int product_idx) {
+
 		Product product = productService.select(product_idx);//3단계: 상세내용 한건 가져오기
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("product", product); //4단계: 결과 저장 
+		mav.addObject("formatManager", formatManager);//4단계: 결과저장
 		
-		model.addAttribute("topList", topList); //4단계: 결과 저장 
-		model.addAttribute("product", product); //4단계: 결과 저장 
-		model.addAttribute("formatManager", formatManager);//4단계: 결과저장
+		mav.setViewName("shop/product/detail");
 		
-		return "shop/product/detail";
+		return mav;
 	}
 	
 }

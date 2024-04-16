@@ -33,6 +33,9 @@
 				따라서  아래의 execution() 들어와야 할 표현식은 AspectJ 를 참고하면 된다..
 			-->
 			<aop:pointcut expression="execution(public * com.sds.mall.client.controller..*(..))" id="topCategoryPointCut"/>
+			
+			<!-- 어느 시점에, Aspect의 어떤 메서드가 관여할지..결정 -->
+			<aop:around method="getTopCategoryList" pointcut-ref="topCategoryPointCut"/>
 		
 		</aop:aspect>
 	</aop:config>	

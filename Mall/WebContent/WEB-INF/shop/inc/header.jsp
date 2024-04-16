@@ -44,7 +44,7 @@
                             <li class="active"><a href="/static/shop/index.html">Home</a></li>
                             
                             <%for(TopCategory topCategory : topList){%>
-                            	<li><a href="/product/list"><%=topCategory.getTopname() %></a></li>
+                            	<li><a href="/product/list?topcategory_idx=<%=topCategory.getTopcategory_idx()%>"><%=topCategory.getTopname() %></a></li>
                             <%} %>
                             
                             <li><a href="#">Pages</a>

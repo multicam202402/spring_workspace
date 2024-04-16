@@ -1,5 +1,10 @@
+<%@page import="com.sds.mall.domain.Product"%>
 <%@page import="com.sds.mall.domain.SubCategory"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
+<%
+	//상품 목록 꺼내기
+	List<Product> productList = (List)request.getAttribute("productList");
+%>
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -187,10 +192,11 @@
                 <div class="col-lg-9 col-md-9">
                     <div class="row">
                     	
-                    	<%for(int i=1;i<=6;i++){%>
+                    	<%for(int i=0;i<productList.size();i++){%>
+                    	<%Product product = productList.get(i); //상품 목록에서 상품 하나씩 꺼내기 %>
                         <div class="col-lg-4 col-md-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="/static/shop/img/shop/shop-1.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="/static/product_img/<%=product.getFilename()%>">
                                     <div class="label new">New</div>
                                     <ul class="product__hover">
                                         <li><a href="/static/shop/img/shop/shop-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
@@ -199,7 +205,7 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">Furry hooded parka</a></h6>
+                                    <h6><a href="#"><%=product.getProduct_name() %></a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -207,7 +213,7 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price">$ 59.0</div>
+                                    <div class="product__price"><%=product.getPrice() %></div>
                                 </div>
                             </div>
                         </div>

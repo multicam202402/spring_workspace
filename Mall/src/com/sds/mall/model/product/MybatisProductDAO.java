@@ -23,6 +23,11 @@ public class MybatisProductDAO implements ProductDAO{
 	}
 	
 	@Override
+	public Product select(int product_idx) {
+		return sqlSessionTemplate.selectOne("Product.select", product_idx);
+	}
+	
+	@Override
 	public List selectAllByTopIdx(int topcategory_idx) {
 		return sqlSessionTemplate.selectList("Product.selectAllByTopIdx", topcategory_idx);
 	}

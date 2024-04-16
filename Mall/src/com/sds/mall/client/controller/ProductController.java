@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.sds.mall.domain.Product;
 import com.sds.mall.model.common.FormatManager;
 import com.sds.mall.model.product.ProductService;
 import com.sds.mall.model.product.TopCategoryService;
@@ -65,8 +66,11 @@ public class ProductController {
 	public String getDetail(Model model, int product_idx) {
 		
 		List topList = topCategoryService.selectAll(); //3단계: 카테고리 가져오기
-
+		Product product = productService.select(product_idx);//3단계: 상세내용 한건 가져오기
+		
 		model.addAttribute("topList", topList); //4단계: 결과 저장 
+		model.addAttribute("product", product); //4단계: 결과 저장 
+		model.addAttribute("formatManager", formatManager);//4단계: 결과저장
 		
 		return "shop/product/detail";
 	}

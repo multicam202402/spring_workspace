@@ -5,7 +5,7 @@
 <%
 	//상품 목록 꺼내기
 	List<Product> productList = (List)request.getAttribute("productList");
-	FormatManager formatManager = (FormatManager)request.getAttribute("formManager");
+	FormatManager formatManager = (FormatManager)request.getAttribute("formatManager");
 %>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -207,7 +207,7 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="/product/detail?product_idx=5"><%=product.getProduct_name() %></a></h6>
+                                    <h6><a href="/product/detail?product_idx=<%=product.getProduct_idx()%>"><%=product.getProduct_name() %></a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -215,7 +215,7 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price"><%=product.getPrice() %></div>
+                                    <div class="product__price"><%=formatManager.getCurrency(product.getPrice()) %></div>
                                 </div>
                             </div>
                         </div>

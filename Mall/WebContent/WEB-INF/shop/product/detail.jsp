@@ -3,9 +3,8 @@
 <%@page import="com.sds.mall.domain.SubCategory"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
-	//상품 목록 꺼내기
-	List<Product> productList = (List)request.getAttribute("productList");
-	FormatManager formatManager = (FormatManager)request.getAttribute("formManager");
+	FormatManager formatManager = (FormatManager)request.getAttribute("formatManager");
+	Product product = (Product)request.getAttribute("product");
 %>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -54,31 +53,32 @@
                     <div class="product__details__pic">
                         <div class="product__details__pic__left product__thumb nice-scroll">
                             <a class="pt active" href="#product-1">
-                                <img src="img/product/details/thumb-1.jpg" alt="">
+                                <img src="/static/shop/img/product/details/thumb-1.jpg" alt="">
                             </a>
                             <a class="pt" href="#product-2">
-                                <img src="img/product/details/thumb-2.jpg" alt="">
+                                <img src="/static/shop/img/product/details/thumb-2.jpg" alt="">
                             </a>
                             <a class="pt" href="#product-3">
-                                <img src="img/product/details/thumb-3.jpg" alt="">
+                                <img src="/static/shop/img/product/details/thumb-3.jpg" alt="">
                             </a>
                             <a class="pt" href="#product-4">
-                                <img src="img/product/details/thumb-4.jpg" alt="">
+                                <img src="/static/shop/img/product/details/thumb-4.jpg" alt="">
                             </a>
                         </div>
                         <div class="product__details__slider__content">
                             <div class="product__details__pic__slider owl-carousel">
-                                <img data-hash="product-1" class="product__big__img" src="img/product/details/product-1.jpg" alt="">
-                                <img data-hash="product-2" class="product__big__img" src="img/product/details/product-3.jpg" alt="">
-                                <img data-hash="product-3" class="product__big__img" src="img/product/details/product-2.jpg" alt="">
-                                <img data-hash="product-4" class="product__big__img" src="img/product/details/product-4.jpg" alt="">
+                                <img data-hash="product-1" class="product__big__img" src="/static/product_img/<%=product.getFilename()%>" alt="">
+                                
+                                <img data-hash="product-2" class="product__big__img" src="/static/shop/img/product/details/product-3.jpg" alt="">
+                                <img data-hash="product-3" class="product__big__img" src="/static/shop/img/product/details/product-2.jpg" alt="">
+                                <img data-hash="product-4" class="product__big__img" src="/static/shop/img/product/details/product-4.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="product__details__text">
-                        <h3>Essential structured blazer <span>Brand: SKMEIMore Men Watches from SKMEI</span></h3>
+                        <h3><%=product.getProduct_name() %> <span>Brand: <%=product.getBrand() %></span></h3>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -87,7 +87,7 @@
                             <i class="fa fa-star"></i>
                             <span>( 138 reviews )</span>
                         </div>
-                        <div class="product__details__price">$ 75.0 <span>$ 83.0</span></div>
+                        <div class="product__details__price"><%=formatManager.getCurrency(product.getPrice()) %> <span><%=formatManager.getCurrency(product.getPrice()*2) %></span></div>
                         <p>Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur
                         magni lores eos qui ratione voluptatem sequi nesciunt.</p>
                         <div class="product__details__button">
@@ -177,16 +177,9 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <h6>Description</h6>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed
-                                    quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt loret.
-                                    Neque porro lorem quisquam est, qui dolorem ipsum quia dolor si. Nemo enim ipsam
-                                    voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia ipsu
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nulla
-                                consequat massa quis enim.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                quis, sem.</p>
+                                <p>
+                                	<%=product.getDetail() %>
+                                </p>
                             </div>
                             <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <h6>Specification</h6>
@@ -226,10 +219,10 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/related/rp-1.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="/static/shop/img/product/related/rp-1.jpg">
                             <div class="label new">New</div>
                             <ul class="product__hover">
-                                <li><a href="img/product/related/rp-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                <li><a href="/static/shop/img/product/related/rp-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                             </ul>
@@ -249,9 +242,9 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/related/rp-2.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="/static/shop/img/product/related/rp-2.jpg">
                             <ul class="product__hover">
-                                <li><a href="img/product/related/rp-2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                <li><a href="/static/shop/img/product/related/rp-2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                             </ul>
@@ -271,10 +264,10 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/related/rp-3.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="/static/shop/img/product/related/rp-3.jpg">
                             <div class="label stockout">out of stock</div>
                             <ul class="product__hover">
-                                <li><a href="img/product/related/rp-3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                <li><a href="/static/shop/img/product/related/rp-3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                             </ul>
@@ -294,9 +287,9 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/related/rp-4.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="/static/shop/img/product/related/rp-4.jpg">
                             <ul class="product__hover">
-                                <li><a href="img/product/related/rp-4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                <li><a href="/static/shop/img/product/related/rp-4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_bag_alt"></span></a></li>
                             </ul>

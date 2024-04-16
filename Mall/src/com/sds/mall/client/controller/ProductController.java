@@ -59,7 +59,28 @@ public class ProductController {
 		
 		return "shop/product/list";
 	} 
+	
+	//상품 1건 상세보기 
+	@GetMapping("/product/detail")
+	public String getDetail(Model model, int product_idx) {
+		
+		List topList = topCategoryService.selectAll(); //3단계: 카테고리 가져오기
+
+		model.addAttribute("topList", topList); //4단계: 결과 저장 
+		
+		return "shop/product/detail";
+	}
+	
 }
+
+
+
+
+
+
+
+
+
 
 
 

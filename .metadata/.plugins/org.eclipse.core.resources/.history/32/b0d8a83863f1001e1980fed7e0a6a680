@@ -1,6 +1,0 @@
-package com.sds.springapp.di;
-
-//요리사를 정의한다 ( 프라이팬을 들고 있는..)
-public class Cook {
-
-}

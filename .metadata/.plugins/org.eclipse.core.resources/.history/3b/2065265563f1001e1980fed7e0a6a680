@@ -1,7 +1,0 @@
-package com.sds.springapp.di;
-
-
-//요리 도구 중 프라이팬을 정의한다
-public class FriPan {
-
-}

@@ -1,6 +1,0 @@
-package com.sds.springapp.di;
-
-
-public class Induction implements Pan{
-
-}

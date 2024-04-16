@@ -1,9 +1,11 @@
+<%@page import="com.sds.mall.model.common.FormatManager"%>
 <%@page import="com.sds.mall.domain.Product"%>
 <%@page import="com.sds.mall.domain.SubCategory"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
 	//상품 목록 꺼내기
 	List<Product> productList = (List)request.getAttribute("productList");
+	FormatManager formatManager = (FormatManager)request.getAttribute("formManager");
 %>
 <!DOCTYPE html>
 <html lang="zxx">

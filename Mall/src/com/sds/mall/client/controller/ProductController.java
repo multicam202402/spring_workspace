@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.sds.mall.model.common.FormatManager;
 import com.sds.mall.model.product.ProductService;
 import com.sds.mall.model.product.TopCategoryService;
 
@@ -20,6 +21,10 @@ public class ProductController {
 	
 	@Autowired
 	private ProductService productService;
+	
+	//model 패키지에 두었으므로, root.xml의 <component-scan> 에 의해 어플리케이션 가동과 동시에 이미 메모리에 올라와 있슴
+	@Autowired
+	private FormatManager formatManager;
 	
 	//상품 목록 요청 
 	@GetMapping("/product/list")
@@ -50,8 +55,7 @@ public class ProductController {
 		
 		model.addAttribute("topList", topList);//4단계: 결과저장
 		model.addAttribute("productList", productList);//4단계: 결과저장
-		
-		
+		model.addAttribute("formatManager", formatManager);//4단계: 결과저장
 		
 		return "shop/product/list";
 	} 

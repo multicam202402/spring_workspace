@@ -1,3 +1,4 @@
+<%@page import="com.sds.mall.domain.SubCategory"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -49,25 +50,24 @@
                             </div>
                             <div class="categories__accordion">
                                 <div class="accordion" id="accordionExample">
-                                
+                                	<%for(int i=0; i<topList.size();i++){ %>
+                                	<%TopCategory topCategory = topList.get(i); %>
                                     <div class="card">
                                         <div class="card-heading active">
-                                            <a data-toggle="collapse" data-target="#collapseOne">Women</a>
+                                            <a data-toggle="collapse" data-target="#collapse<%=i%>"><%=topCategory.getTopname() %></a>
                                         </div>
-                                        <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                        <div id="collapse<%=i%>" class="collapse hide" data-parent="#accordionExample">
                                             <div class="card-body">
                                                 <ul>
-                                                    <li><a href="#">Coats</a></li>
-                                                    <li><a href="#">Jackets</a></li>
-                                                    <li><a href="#">Dresses</a></li>
-                                                    <li><a href="#">Shirts</a></li>
-                                                    <li><a href="#">T-shirts</a></li>
-                                                    <li><a href="#">Jeans</a></li>
+                                                	<%List<SubCategory> subList = topCategory.getSubList(); %>
+                                                	<%for(SubCategory subCategory  : subList){ %>
+                                                    <li><a href="#"><%=subCategory.getSubname() %></a></li>
+                                                    <%} %>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                    <%} %>
                                 </div>
                             </div>
                         </div>

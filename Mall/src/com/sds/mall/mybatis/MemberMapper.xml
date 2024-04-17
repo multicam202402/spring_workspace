@@ -6,6 +6,10 @@
 	<insert id="insert" parameterType="Member">
 		insert into member(uid, nickname, email, sns_idx) 
 		values(#{uid}, #{nickname}, #{email}, #{sns.sns_idx})
+		
+		<selectKey keyColumn="member_idx" keyProperty="member_idx" order="AFTER" resultType="int">
+			select last_insert_id()	 as member_idx	
+		</selectKey>
 	</insert>
 	
 </mapper>

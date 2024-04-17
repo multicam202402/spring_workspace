@@ -1,16 +1,23 @@
 package com.sds.mall.client.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sds.mall.domain.Member;
+import com.sds.mall.exception.MemberException;
+import com.sds.mall.model.member.MemberService;
 
 //회원과 관련된 요청을 전담하는 하위 컨트롤러 
 @Controller
 public class MemberController {
+	
+	@Autowired
+	private MemberService memberService;
 	
 	//로그인 폼 요청 처리 
 	@GetMapping("/member/loginform")
@@ -41,11 +48,19 @@ public class MemberController {
 		//System.out.println("addr = "+member.getMemberDetail().getAddr());
 		
 		//3단계: 서비스에게 일 시키기
-		
+		memberService.regist(member); //이 메서드 호출 후, 우려했던 예외가 전달될 경우, 컨트롤러의 
+		//기능 중 예외를 감지하는 @ExceptionHandler가 명시된 메서드가 호출된다.. 
 		
 		//클라이언트가 비동기방식으로 요청을 햇으므로, 응답 데이터는 jsp가 아니다 
 		return "ok"; //ViewResolver에 의해 jsp로 해석하지마!!
 	}
+	
+	@ExceptionHandler(MemberException.class)
+	@ResponseBody //비동기 요청에 대한 에러 처리 이므로, 응답 정보 또한 순수 데이터를 에러 응답을 보내자
+	public String handle(MemberException e) {
+		return "fail";
+	}
+	
 }
 
 

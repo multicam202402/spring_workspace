@@ -136,23 +136,24 @@
 </html>
 <script type="text/javascript">
 	//비동기로 전송하기 
-	$.ajax({
-		url:"/member/regist",
-		type:"post", 
-		data:{
-			uid:$("input[name='uid']").val(),
-			password:$("input[name='password ']").val(),
-			nickname:$("input[name='nickname']").val(),
-			email:$("input[name='email']").val(),
-			phone:$("input[name='phone']").val(),
-			addr:$("input[name='addr']").val()
-		},
-		success:function(result, status, xhr){
-			
-		}
-		
-	});
-
+	function regist(){
+		$.ajax({
+			url:"/member/regist",
+			type:"post", 
+			data:{
+				uid:$("input[name='uid']").val(),
+				"memberDetail.password":$("input[name='password']").val(),
+				nickname:$("input[name='nickname']").val(),
+				email:$("input[name='email']").val(),
+				"memberDetail.phone":$("input[name='phone']").val(),
+				"memberDetail.addr":$("input[name='addr']").val()
+			},
+			success:function(result, status, xhr){
+				console.log(result);
+			}
+		});
+	}
+	
 	$(function(){
 		$("#bt_regist").click(function(){
 			regist();

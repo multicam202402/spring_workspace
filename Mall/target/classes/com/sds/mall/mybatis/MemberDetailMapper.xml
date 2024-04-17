@@ -7,5 +7,9 @@
 		values(#{password}, #{phone}, #{addr}, #{member.member_idx})
 	</insert>
 	
+	<!-- 한건 가져오기  -->
+	<select id="select" parameterType="int" resultType="MemberDetail">
+		select * from member_detail where member_idx=#{member_idx}	
+	</select>
 	
 </mapper>

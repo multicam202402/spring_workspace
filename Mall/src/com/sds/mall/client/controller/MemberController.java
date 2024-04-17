@@ -27,6 +27,7 @@ public class MemberController {
 		return mav;
 	}
 	
+	
 	//회원가입 폼 요청 처리 
 	@GetMapping("/member/registform")
 	public ModelAndView getRegistForm() {
@@ -58,7 +59,9 @@ public class MemberController {
 	//로그인 요청 처리 
 	@PostMapping("/member/login")
 	@ResponseBody
-	public String login() {
+	public String login(Member member) {
+		//3단계: 일 시키기 
+		memberService.login(member);
 		
 		return "ok";
 	}

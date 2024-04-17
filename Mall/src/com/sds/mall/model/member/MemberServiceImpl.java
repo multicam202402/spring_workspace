@@ -37,7 +37,12 @@ public class MemberServiceImpl implements MemberService{
 		
 		memberDetailDAO.insert(member.getMemberDetail());
 	}
-
+	
+	@Override
+	public Member login(Member member) throws MemberException{
+		return memberDAO.login(member);
+	}
+	
 	@Override
 	public List selectAll() {
 		// TODO Auto-generated method stub

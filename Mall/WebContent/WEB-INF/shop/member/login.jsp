@@ -56,13 +56,13 @@
 					            <div class="form-group row">
 					                <label for="inputEmail3" class="col-sm-2 col-form-label">ID</label>
 					                <div class="col-sm-10">
-					                    <input type="email" class="form-control" id="inputEmail3" placeholder="Your ID...">
+					                    <input type="text" class="form-control" name="uid" placeholder="Your ID...">
 					                </div>
 					            </div>
 					            <div class="form-group row">
 					                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
 					                <div class="col-sm-10">
-					                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+					                    <input type="password" class="form-control" name="password" placeholder="Password">
 					                </div>
 					            </div>
 					            <div class="form-group row">
@@ -75,8 +75,8 @@
 					        </div>
 					        <!-- /.card-body -->
 					        <div class="card-footer">
-					            <button type="submit" class="btn btn-info" id="bt_login">로그인</button>
-					            <button type="submit" class="btn btn-info" id="bt_regist">회원가입</button>
+					            <button type="button" class="btn btn-info" id="bt_login">로그인</button>
+					            <button type="button" class="btn btn-info" id="bt_regist">회원가입</button>
 					        </div>
 					        <!-- /.card-footer -->
 					    </form>
@@ -112,7 +112,7 @@
 			type:"post",
 			data:{
 				uid:$("input[name='uid']").val(), 
-				password:$("input[name='password']").val() 				
+				"memberDetail.password":$("input[name='password']").val() 				
 			},
 			success:function(result, status, xhr){
 				console.log(result);

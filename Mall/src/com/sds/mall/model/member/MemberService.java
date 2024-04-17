@@ -6,6 +6,7 @@ import com.sds.mall.domain.Member;
 
 public interface MemberService {
 	public void regist(Member member); //가입 트랜잭션 상황
+	public Member login(Member member);//로그인 
 	public List selectAll(); //회원목록
 	public List selectAllBySnsIdx(int sns_idx); //1~4
 	public Member select(int member_idx);//회원정보 1건 가져오기

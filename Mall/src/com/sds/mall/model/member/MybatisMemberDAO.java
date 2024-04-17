@@ -23,7 +23,19 @@ public class MybatisMemberDAO implements MemberDAO{
 			throw new MemberException("회원 정보가 입력되지 못했습니다");
 		}		
 	}
-
+	
+	@Override
+	public Member login(Member member) throws MemberException{
+		//회원이 존재한다면 로그인 성공, 일치하는 회원이 없다면 로그인 실패
+		Member dto = sqlSessionTemplate.selectOne("Member.login", member);
+		
+		if(dto ==null) { //로그인 실패
+			System.out.println("로그인 실패");
+			throw new MemberException("회원정보가 일치하지 않습니다");
+		}
+		return dto;
+	}
+	
 	@Override
 	public List selectAll() {
 		// TODO Auto-generated method stub

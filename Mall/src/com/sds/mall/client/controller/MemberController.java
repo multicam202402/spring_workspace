@@ -30,8 +30,7 @@ public class MemberController {
 	
 	//회원가입 요청 처리 
 	@PostMapping("/member/regist")
-	@ResponseBody //이 어노테이션을 명시하면, 아래의 return 에 의한 문자열은 ViewResolver에 의해 jsp로 조합되지 않고
-	//순수 데이터로 전송이 된다..
+	@ResponseBody //이 어노테이션을 명시하면, 아래의 return 에 의한 문자열은 ViewResolver에 의해 jsp로 조합되지 않고 순수 데이터로 전송이 된다..
 	public String regist(Member member) {
 		//스프링은 클라이언트의 파라미터명과 서버측의 DTO의 멤버변수 명이 일치할 경우 자동 매핑을 처리
 		System.out.println("uid = "+member.getUid());

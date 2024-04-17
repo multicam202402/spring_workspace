@@ -150,7 +150,12 @@
 				"sns.sns_idx":4
 			},
 			success:function(result, status, xhr){
-				console.log(result);
+				if(result=="ok"){ //가입 성공이라면
+					alert("가입을 축하드립니다.\n이용하시려면 로그인해 주세요");
+					location.href="/member/loginform";
+				}else{
+					alert("회원가입에 실패하였습니다");
+				}
 			}
 		});
 	}

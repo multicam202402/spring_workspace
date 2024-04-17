@@ -55,6 +55,15 @@ public class MemberController {
 		return "ok"; //ViewResolver에 의해 jsp로 해석하지마!!
 	}
 	
+	//로그인 요청 처리 
+	@PostMapping("/member/login")
+	@ResponseBody
+	public String login() {
+		
+		return "ok";
+	}
+	
+	
 	@ExceptionHandler(MemberException.class)
 	@ResponseBody //비동기 요청에 대한 에러 처리 이므로, 응답 정보 또한 순수 데이터를 에러 응답을 보내자
 	public String handle(MemberException e) {

@@ -49,9 +49,8 @@ public class TopCategoryAspect {
 		String uri = request.getRequestURI(); //클라이언트의 URI  정보 
 		
 		if( 
-				//회원가입 요청의 경우엔 비동기 이므로, TopCategory 필요없다
-				uri.equals("/member/regist")
-				
+				uri.equals("/member/regist") || //회원가입 요청의 경우엔 비동기 이므로, TopCategory 필요없다 
+				uri.equals("/member/login")  //로그인 요청의 경우도 제외
 		) { 
 			//TopCategory를 구하지 않아도 되는 경우
 			returnObj=joinPoint.proceed(); //그냥 가던길 가라(하위 컨트롤러 메서드 호출)

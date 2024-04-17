@@ -75,8 +75,8 @@
 					        </div>
 					        <!-- /.card-body -->
 					        <div class="card-footer">
-					            <button type="submit" class="btn btn-info">로그인</button>
-					            <button type="submit" class="btn btn-info">회원가입</button>
+					            <button type="submit" class="btn btn-info" id="bt_login">로그인</button>
+					            <button type="submit" class="btn btn-info" id="bt_regist">회원가입</button>
 					        </div>
 					        <!-- /.card-footer -->
 					    </form>
@@ -103,5 +103,35 @@
 	<!-- Js Plugins -->
 	<%@ include file="../inc/footer_link.jsp" %>
 </body>
-
 </html>
+<script type="text/javascript">
+	function login(){
+		//비동기 방식으로 로그인을 요청하자 
+		$.ajax({
+			url:"/member/login",
+			type:"post",
+			data:{
+				uid:$("input[name='uid']").val(), 
+				password:$("input[name='password']").val() 				
+			},
+			success:function(result, status, xhr){
+				console.log(result);
+			}
+		});
+	}
+	
+	$(function(){
+		$("#bt_login").click(function(){
+			login();
+		});
+	});
+</script>
+
+
+
+
+
+
+
+
+

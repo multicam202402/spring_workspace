@@ -12,4 +12,23 @@
 		</selectKey>
 	</insert>
 	
+	<!-- 로그인 인증 
+	Mybait 는 SQL Mapper 라고 한다. 
+	즉 SQL문과 자바 객체와의 매핑 
+	아래의 쿼리문의 경우, 두 테이블을 조인한 결과인 컬럼명들과  Member DTO의
+	멤버변수명 간에 이름이 틀리므로, 자동매핑이 불가능하다 
+	이름
+	-->
+	<select id="login" parameterType="Member" resultType="Member">
+		select m.member_idx as member_idx ,uid, password, 
+		nickname, email, sns_idx,phone, addr
+		from member m, member_detail d
+		where m.member_idx = d.member_idx 
+		and  uid=#{uid} and password=#{memberDetail.password}	
+	</select>
+	
+	
+	
+	
 </mapper>
+

@@ -146,7 +146,8 @@
 				nickname:$("input[name='nickname']").val(),
 				email:$("input[name='email']").val(),
 				"memberDetail.phone":$("input[name='phone']").val(),
-				"memberDetail.addr":$("input[name='addr']").val()
+				"memberDetail.addr":$("input[name='addr']").val(),
+				"sns.sns_idx":4
 			},
 			success:function(result, status, xhr){
 				console.log(result);

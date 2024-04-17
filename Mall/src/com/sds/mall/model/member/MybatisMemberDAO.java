@@ -18,7 +18,7 @@ public class MybatisMemberDAO implements MemberDAO{
 	@Override
 	public void insert(Member member) throws MemberException{
 		int result = sqlSessionTemplate.insert("Member.insert", member);
-		if(result >1) { 
+		if(result <1) { 
 			//실패한 경우  RuntimeException  을 일으켜야, 스프링에서 트랜잭션을 rollback 해준다 	
 			throw new MemberException("회원 정보가 입력되지 못했습니다");
 		}		

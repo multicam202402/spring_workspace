@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.sds.mall.domain.Member;
+import com.sds.mall.domain.MemberDetail;
 import com.sds.mall.exception.MemberException;
 
 @Service
@@ -24,6 +25,15 @@ public class MemberServiceImpl implements MemberService{
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void regist(Member member) throws MemberException {
 		memberDAO.insert(member);//회원 테이블에 먼저 insert  후,  pk를 자동으로  member DTO에 채워넣음
+		
+		//member 안에 들어있는 memberDetail을 접근한다
+		MemberDetail memberDetail = member.getMemberDetail();
+		
+		//그  memberDetail 보유한 member안에 member_idx 값을 넣어준다
+		Member dto = new Member();
+		dto.setMember_idx(member.getMember_idx());
+		memberDetail.setMember(dto); //상세정보에 새롭게 생성된 DTO 주입
+		
 		
 		memberDetailDAO.insert(member.getMemberDetail());
 	}

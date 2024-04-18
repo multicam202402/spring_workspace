@@ -6,11 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.sds.mall.domain.Cart;
 import com.sds.mall.domain.Member;
+import com.sds.mall.exception.CartException;
 import com.sds.mall.model.order.CartService;
 
 //장바구니와 관련된 요청을 처리하는 하위 컨트롤러
@@ -43,10 +45,11 @@ public class CartController {
 	}
 	
 	//장바구니 관련 에러처리 
+	@ExceptionHandler(CartException.class)
 	public ResponseEntity handle() {
-		return null;
-	}
-	
+		ResponseEntity entity = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+		return entity;
+	}	
 }
 
 

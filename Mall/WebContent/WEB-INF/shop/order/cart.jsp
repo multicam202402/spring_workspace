@@ -138,7 +138,7 @@
                             <li>Subtotal <span><%=formatManager.getCurrency(total)%></span></li>
                             <li>Total <span><%=formatManager.getCurrency(total) %></span></li>
                         </ul>
-                        <a href="#" class="primary-btn">Proceed to checkout</a>
+                        <a href="javascript:checkout()" class="primary-btn">Proceed to checkout</a>
                     </div>
                 </div>
             </div>
@@ -164,6 +164,10 @@
 
 </html>
 <script type="text/javascript">
+	function checkout(){
+		location.href="/order/payment/payform";
+	}
+
 	function delCart(cart_idx){
 		
 		if(confirm("삭제하시겠어요?")){

@@ -68,12 +68,14 @@
                     <div class="header__right">
                         <div class="header__right__auth">
                         	
-                        	<span> 지노님 </span>
-				            <a href="/member/loginform">로그인</a>
-				            <a href="/member/registform">회원가입</a>
-				            
-				            <a href="/member/loginform">로그아웃</a>
-				            <a href="/member/registform">MyPage</a>
+                        	<%if(member !=null){ //세션에 member 담겨져 있다면 %>
+	                        	<span> <%=member.getNickname() %>님 </span>
+					            <a href="/member/logout">로그아웃</a>
+					            <a href="/member/mypage/main">MyPage</a>
+				            <%}else{ %>
+					            <a href="/member/loginform">로그인</a>
+					            <a href="/member/registform">회원가입</a>
+				            <%} %>
 				            
                         </div>
                         <ul class="header__right__widget">

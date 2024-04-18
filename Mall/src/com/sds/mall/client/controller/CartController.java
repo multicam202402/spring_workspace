@@ -74,6 +74,16 @@ public class CartController {
 		return "redirect:/order/cart/list";
 	}
 	
+	//장바구니 1건 삭제
+	@GetMapping("/order/cart/delete")
+	public String delCart(int cart_idx) {
+		System.out.println("전달된 cart_idx is "+cart_idx);
+		
+		return null;
+	}
+	
+	
+	
 	//장바구니 관련 에러 처리
 	@ExceptionHandler(CartException.class)
 	public ModelAndView handle(CartException e) {

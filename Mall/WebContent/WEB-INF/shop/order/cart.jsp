@@ -100,7 +100,7 @@
                                     	total += subTotal; //소계를 합산하여 총계에 대입
                                     %>
                                     </td>
-                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                    <td class="cart__close"><span class="icon_close" onClick="delCart(<%=cart.getCart_idx()%>)"></span></td>
                                 </tr>
                             	<%} %>
                             </tbody>
@@ -164,6 +164,13 @@
 
 </html>
 <script type="text/javascript">
+	function delCart(cart_idx){
+		
+		if(confirm("삭제하시겠어요?")){
+			location.href="/order/cart/delete?cart_idx="+cart_idx;
+		}	
+	}
+	
 	//장바구니 갯수 수정 사항을 서버로 전송하자 (동기방식)
 	function updateCart(){
 		$("#form1").attr({

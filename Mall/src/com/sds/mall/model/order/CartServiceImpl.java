@@ -47,10 +47,14 @@ public class CartServiceImpl implements CartService{
 	public void update(Cart cart) {
 	}
 
-	@Transactional(propagation = Propagation.REQUIRED)
+	//@Transactional(propagation = Propagation.REQUIRED)
 	public void updateGroup(List<Cart> cartList) throws CartException{
 		//장바구니의 수정할 목록 수 만큼 반복문으로 수정을 처리
 		for(Cart cart  : cartList) {
+			System.out.println("누가 : "+cart.getMember().getMember_idx());
+			System.out.println("무엇을 : "+cart.getProduct().getProduct_idx());
+			System.out.println("몇개? : "+cart.getEa());
+			
 			cartDAO.update(cart);
 		}
 	} 

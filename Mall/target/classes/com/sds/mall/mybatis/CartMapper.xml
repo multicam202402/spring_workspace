@@ -30,7 +30,8 @@
 	<!-- 같은 회원이 같은 상품을 담게되면, insert 가 아니라 ea를 업데이트 시킨다 -->
 	<update id="update" parameterType="Cart">
 		update cart set ea=#{ea} 
-		where member_idx=#{member.member_idx }  and product_idx=#{product.product_idx}
+		where member_idx=#{member.member_idx } 
+		 and product_idx=#{product.product_idx}
  	</update>	
 	
 	<!-- 장바구니에 상품 등록 -->

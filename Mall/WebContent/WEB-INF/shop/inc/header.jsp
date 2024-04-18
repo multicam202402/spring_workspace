@@ -1,9 +1,13 @@
+<%@page import="com.sds.mall.domain.Member"%>
 <%@page import="com.sds.mall.domain.TopCategory"%>
 <%@page import="java.util.List"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
 	//컨트롤러가 저장한 topList 가져오기 
 	List<TopCategory> topList =(List)request.getAttribute("topList");
+
+	//로그인 한 회원의 경우  session에 Member가 담겨져 있으므로, Member DTO를 꺼내어 사용해보자 
+	Member member = (Member)session.getAttribute("member");
 %>
     <!-- Offcanvas Menu Begin -->
     <div class="offcanvas-menu-overlay"></div>
@@ -63,8 +67,14 @@
                 <div class="col-lg-3">
                     <div class="header__right">
                         <div class="header__right__auth">
+                        	
+                        	<span> 지노님 </span>
 				            <a href="/member/loginform">로그인</a>
 				            <a href="/member/registform">회원가입</a>
+				            
+				            <a href="/member/loginform">로그아웃</a>
+				            <a href="/member/registform">MyPage</a>
+				            
                         </div>
                         <ul class="header__right__widget">
                             <li><span class="icon_search search-switch"></span></li>

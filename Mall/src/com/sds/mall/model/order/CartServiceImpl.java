@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.sds.mall.domain.Cart;
 import com.sds.mall.domain.Member;
@@ -43,10 +45,16 @@ public class CartServiceImpl implements CartService{
 
 	@Override
 	public void update(Cart cart) {
-		// TODO Auto-generated method stub
-		
 	}
 
+	@Transactional(propagation = Propagation.REQUIRED)
+	public void updateGroup(List<Cart> cartList) throws CartException{
+		//장바구니의 수정할 목록 수 만큼 반복문으로 수정을 처리
+		for(Cart cart  : cartList) {
+			cartDAO.update(cart);
+		}
+	} 
+	
 	@Override
 	public void delete(Cart cart) {
 		// TODO Auto-generated method stub

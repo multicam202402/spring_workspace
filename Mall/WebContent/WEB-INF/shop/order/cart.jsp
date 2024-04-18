@@ -52,6 +52,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="shop__cart__table">
+                    	<form id="form1">
                         <table>
                             <thead>
                                 <tr>
@@ -87,7 +88,8 @@
                                     <td class="cart__price"><%=formatManager.getCurrency(product.getPrice()) %></td>
                                     <td class="cart__quantity">
                                         <div class="pro-qty">
-                                            <input type="text" value="<%=cart.getEa()%>">
+                                        	<input type="hidden" name="product_idx" value="<%=product.getProduct_idx()%>">
+                                            <input type="text" name="ea" value="<%=cart.getEa()%>">
                                         </div>
                                     </td>
                                     <td class="cart__total">
@@ -103,6 +105,7 @@
                             	<%} %>
                             </tbody>
                         </table>
+                    	</form>
                     </div>
                 </div>
             </div>
@@ -114,7 +117,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="cart__btn update__btn">
-                        <a href="#"><span class="icon_loading"></span> Update cart</a>
+                        <a href="javascript:updateCart()"><span class="icon_loading"></span> Update cart</a>
                     </div>
                 </div>
             </div>
@@ -160,3 +163,23 @@
 </body>
 
 </html>
+<script type="text/javascript">
+	//장바구니 갯수 수정 사항을 서버로 전송하자 (동기방식)
+	function updateCart(){
+		$("#form1").attr({
+			action:"/order/cart/update",
+			method:"post"
+		});
+		
+		$("#form1").submit();
+	}
+</script>
+
+
+
+
+
+
+
+
+

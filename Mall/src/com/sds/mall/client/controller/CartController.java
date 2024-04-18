@@ -1,5 +1,6 @@
 package com.sds.mall.client.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.sds.mall.domain.Cart;
 import com.sds.mall.domain.Member;
+import com.sds.mall.domain.Product;
 import com.sds.mall.exception.CartException;
 import com.sds.mall.model.common.FormatManager;
 import com.sds.mall.model.order.CartService;
@@ -64,6 +66,35 @@ public class CartController {
 		model.addAttribute("formatManager", formatManager);//4단계: 결과 저장
 		
 		return "shop/order/cart";
+	}
+	
+	
+	//장바구니 수정 요청 처리 
+	@PostMapping("/order/cart/update")
+	public String update(int[] product_idx , int[] ea, HttpSession session) {
+		System.out.println("ea 배열의 길이는 "+ea.length);
+		
+		Member member = (Member)session.getAttribute("member");
+		
+		List cartList = new ArrayList();
+		
+		for(int i=0; i<product_idx.length;i++) {
+			Cart cart = new Cart(); 
+			//갯수, 누가, 어떤제품을..
+			cart.setEa(ea[i]);//몇개를
+			cart.setMember(member); //누가
+			
+			Product product = new Product();
+			product.setProduct_idx(product_idx[i]);//어떤 제품을?
+			cart.setProduct(product);
+			
+			cartList.add(cart);
+		}
+		
+		//3단계: 서비스에 일 시키기 
+		cartService.updateGroup(cartList);
+		
+		return "redirect:/order/cart/list";
 	}
 	
 	//장바구니 관련 에러처리 

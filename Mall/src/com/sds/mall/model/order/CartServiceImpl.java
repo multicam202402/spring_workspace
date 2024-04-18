@@ -4,8 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.sds.mall.domain.Cart;
 import com.sds.mall.domain.Member;
@@ -60,9 +58,8 @@ public class CartServiceImpl implements CartService{
 	} 
 	
 	@Override
-	public void delete(Cart cart) {
-		// TODO Auto-generated method stub
-		
+	public void delete(Cart cart) throws CartException{
+		cartDAO.delete(cart);
 	}
 	
 }

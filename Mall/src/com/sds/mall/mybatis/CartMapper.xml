@@ -44,7 +44,21 @@
 	<select id="selectByMember" parameterType="Member" resultMap="CartMap">
 		select * from cart where member_idx=#{member_idx}
 	</select>
+	
+	<!-- 장바구니 1건 삭제 -->
+	<delete id="delete" parameterType="Cart">
+		delete from cart where cart_idx=#{cart_idx}	
+	</delete>
+	
 </mapper>
+
+
+
+
+
+
+
+
 
 
 

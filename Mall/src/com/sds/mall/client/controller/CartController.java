@@ -76,10 +76,11 @@ public class CartController {
 	
 	//장바구니 1건 삭제
 	@GetMapping("/order/cart/delete")
-	public String delCart(int cart_idx) {
-		System.out.println("전달된 cart_idx is "+cart_idx);
+	public String delCart(Cart cart) {
+		System.out.println("전달된 cart_idx is "+cart.getCart_idx());
+		cartService.delete(cart);
 		
-		return null;
+		return "redirect:/order/cart/list";
 	}
 	
 	

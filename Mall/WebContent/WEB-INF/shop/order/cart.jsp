@@ -63,6 +63,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            	<%int total=0; %>
                             	<%for(int i=0;i<cartList.size();i++){ %>
                             	<%Cart cart =  cartList.get(i);%>
                             	<% 
@@ -71,7 +72,7 @@
                             	%>
                                 <tr>
                                     <td class="cart__product__item">
-                                        <img src="img/shop-cart/cp-1.jpg" alt="">
+                                        <img src="/static/product_img/<%=product.getFilename() %>" width="55px" height="50px">  
                                         <div class="cart__product__item__title">
                                             <h6><%=product.getProduct_name() %></h6>
                                             <div class="rating">
@@ -83,13 +84,20 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="cart__price">$ 150.0</td>
+                                    <td class="cart__price"><%=formatManager.getCurrency(product.getPrice()) %></td>
                                     <td class="cart__quantity">
                                         <div class="pro-qty">
-                                            <input type="text" value="1">
+                                            <input type="text" value="<%=cart.getEa()%>">
                                         </div>
                                     </td>
-                                    <td class="cart__total">$ 300.0</td>
+                                    <td class="cart__total">
+                                    <% //가격 *  ea 
+                                    	int subTotal = product.getPrice() * cart.getEa();
+                                    	out.print(formatManager.getCurrency(subTotal));
+                                    	
+                                    	total += subTotal; //소계를 합산하여 총계에 대입
+                                    %>
+                                    </td>
                                     <td class="cart__close"><span class="icon_close"></span></td>
                                 </tr>
                             	<%} %>
@@ -124,8 +132,8 @@
                     <div class="cart__total__procced">
                         <h6>Cart total</h6>
                         <ul>
-                            <li>Subtotal <span>$ 750.0</span></li>
-                            <li>Total <span>$ 750.0</span></li>
+                            <li>Subtotal <span><%=formatManager.getCurrency(total)%></span></li>
+                            <li>Total <span><%=formatManager.getCurrency(total) %></span></li>
                         </ul>
                         <a href="#" class="primary-btn">Proceed to checkout</a>
                     </div>

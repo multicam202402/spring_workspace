@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.sds.mall.domain.Cart;
 import com.sds.mall.domain.Member;
 import com.sds.mall.exception.CartException;
+import com.sds.mall.model.common.FormatManager;
 import com.sds.mall.model.order.CartService;
 
 //장바구니와 관련된 요청을 처리하는 하위 컨트롤러
@@ -25,6 +26,9 @@ public class CartController {
 	
 	@Autowired
 	private CartService cartService;
+	
+	@Autowired
+	private FormatManager formatManager;
 	
 	//장바구니 등록 요청 
 	@PostMapping("/order/cart/regist")
@@ -57,6 +61,7 @@ public class CartController {
 		List cartList = cartService.selectByMember(member);
 		
 		model.addAttribute("cartList", cartList);//4단계: 결과 저장
+		model.addAttribute("formatManager", formatManager);//4단계: 결과 저장
 		
 		return "shop/order/cart";
 	}

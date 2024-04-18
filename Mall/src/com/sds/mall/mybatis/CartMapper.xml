@@ -39,4 +39,16 @@
 		values(#{member.member_idx}, #{product.product_idx}, #{ea})
 	</insert>
 	
+	<!-- 로그인 한 회원의 장바구니 목록 가져오기 -->
+	<select id="selectByMember" parameterType="Member" resultMap="CartMap">
+		select * from cart where member_idx=#{member_idx}
+	</select>
 </mapper>
+
+
+
+
+
+
+
+

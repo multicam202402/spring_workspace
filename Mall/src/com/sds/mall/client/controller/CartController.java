@@ -1,12 +1,16 @@
 package com.sds.mall.client.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -42,6 +46,19 @@ public class CartController {
 		ResponseEntity entity = ResponseEntity.status(HttpStatus.OK).build();
 		
 		return entity;
+	}
+	
+	//장바구니 목록 요청 
+	@GetMapping("/order/cart/list")
+	public String getList(HttpSession session, Model model) {
+		Member member = (Member)session.getAttribute("member");
+		
+		//3단계: 일 시키기
+		List cartList = cartService.selectByMember(member);
+		
+		model.addAttribute("cartList", cartList);//4단계: 결과 저장
+		
+		return "shop/order/cart";
 	}
 	
 	//장바구니 관련 에러처리 

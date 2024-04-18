@@ -68,6 +68,9 @@ public class TopCategoryAspect {
 			if(returnObj instanceof ModelAndView) {
 				mav = (ModelAndView)returnObj;
 				mav.addObject("topList", topList);
+			}else {
+				//ModelAndView 를 쓰지 않고 저장해야 한다.. 
+				request.setAttribute("topList", topList);
 			}
 		}
 		//아래의 return 문에 의해 , 대표 컨트롤러에게 returnObj 인 ModelAndView나 View가 전달되므로, 

@@ -17,6 +17,11 @@ public class MybatisCartDAO implements CartDAO{
 	private SqlSessionTemplate sqlSessionTemplate;
 	
 	@Override
+	public Cart selectDuplicate(Cart cart) {
+		return sqlSessionTemplate.selectOne("Cart.selectDuplicate", cart);
+	}
+	
+	@Override
 	public void insert(Cart cart) throws CartException{
 		int result = sqlSessionTemplate.insert("Cart.insert", cart);
 		
@@ -39,8 +44,12 @@ public class MybatisCartDAO implements CartDAO{
 	}
 
 	@Override
-	public void update(Cart cart) {
-		// TODO Auto-generated method stub
+	public void update(Cart cart) throws CartException{
+		int result = sqlSessionTemplate.update("Cart.update", cart);
+		
+		if(result <1) {
+			throw new CartException("장바구니 변경 실패");
+		}
 		
 	}
 

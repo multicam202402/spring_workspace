@@ -17,7 +17,17 @@ public class CartServiceImpl implements CartService{
 	
 	@Override
 	public void regist(Cart cart) throws CartException{
-		cartDAO.insert(cart);
+		//먼저 동일한 상품이 있는지 조회
+		//dto는 중복된 상품이 있을때 null이 아니게 됨
+		Cart dto = cartDAO.selectDuplicate(cart);
+		
+		if(dto ==null) {//없다면 insert 
+			cartDAO.insert(cart);
+		}else {
+			//있다면 update, 단 파라미터로 넘어온 갯수와 + 중복된 정보에 들어있는 ea 를 합산한 결과를 update
+			cart.setEa(dto.getEa() + cart.getEa());
+			cartDAO.update(cart);
+		}
 	}
 
 	@Override

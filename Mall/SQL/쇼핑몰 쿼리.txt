@@ -138,6 +138,7 @@ create table orderdetail(
  , product_name varchar(30)
  , price  int  default 0 
  , product_idx  int 
+ , ea int default 0
  , ordersummary_idx  int 
  , constraint  fk_product_orderdetail  foreign key (product_idx) references product(product_idx)
  , constraint fk_ordersummary_orderdetail foreign key (ordersummary_idx) references  

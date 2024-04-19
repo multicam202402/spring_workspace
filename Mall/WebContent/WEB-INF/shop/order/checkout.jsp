@@ -68,7 +68,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
-                                    <p>Last Name <span>*</span></p>
+                                    <p>Address <span>*</span></p>
                                     <input type="text">
                                 </div>
                             </div>
@@ -108,25 +108,7 @@
                                         <li>Total <span>$ 750.0</span></li>
                                     </ul>
                                 </div>
-                                <div class="checkout__order__widget">
-                                    <label for="o-acc">
-                                        Create an acount?
-                                        <input type="checkbox" id="o-acc">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <p>Create am acount by entering the information below. If you are a returing customer
-                                    login at the top of the page.</p>
-                                    <label for="check-payment">
-                                        Cheque payment
-                                        <input type="checkbox" id="check-payment">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label for="paypal">
-                                        PayPal
-                                        <input type="checkbox" id="paypal">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
+                                
                                 <button type="submit" class="site-btn">Place oder</button>
                             </div>
                         </div>

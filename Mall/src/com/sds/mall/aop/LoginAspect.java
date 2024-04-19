@@ -8,9 +8,10 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import com.sds.mall.domain.Member;
+import com.sds.mall.exception.UnAuthorizedException;
 
 //회원에게만 제공되는 요청에 대해, 로그인을 햇는지 여부를 체크하는 Aspect 
-public class UnAuthrorizedException {
+public class LoginAspect {
 	
 	//보안인증이 필요한 요청인지 여부를 알려주는 메서드  true  - 회원인증이 필요한 요청, false-인증 필요없는 요청
 	public boolean isSecureUri(String uri) {
@@ -57,10 +58,11 @@ public class UnAuthrorizedException {
 			if(member !=null) { //로그인을 햇으므로, 가던길 가게하자
 				obj = joinPoint.proceed(); //원래 호출하려던 하위 컨트롤러 메서드 호출
 			}else {
-				
+				//로그인을 하지 않으면, 예외를 발생시켜서, 에러페이지를 보여준다.. 
+				throw new UnAuthorizedException("로그인이 필요한 서비스입니다");
 			}
 		}else {
-			
+			obj = joinPoint.proceed();
 		}
 		
 		return obj;

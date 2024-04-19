@@ -1,3 +1,5 @@
+<%@page import="com.sds.mall.domain.Paymethod"%>
+<%@page import="com.sds.mall.domain.Receiver"%>
 <%@page import="com.sds.mall.domain.Cart"%>
 <%@page import="com.sds.mall.model.common.FormatManager"%>
 <%@page import="com.sds.mall.domain.Product"%>
@@ -7,6 +9,9 @@
 	//장바구니 목록 꺼내기
 	List<Cart> cartList = (List)request.getAttribute("cartList");
 	FormatManager formatManager = (FormatManager)request.getAttribute("formatManager");
+	
+	List<Receiver> receiverList = (List)request.getAttribute("receiverList");
+	List<Paymethod> paymethodList = (List)request.getAttribute("paymethodList");
 %>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -82,6 +87,27 @@
                                 <div class="checkout__form__input">
                                     <p>Email <span>*</span></p>
                                     <input type="text">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="checkout__form__input">
+                                    <p>받는 사람 <span>*</span></p>
+                                    <select>
+                                    	<option>받는사람 선택 ▼</option>
+                                    	<%for(Receiver receiver : receiverList){ %>
+                                    	<option value=""><%=receiver.getAddr() %></option>
+                                    	<%} %>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="checkout__form__input">
+                                    <p>결제방법<span>*</span></p>
+                                    <select>
+                                    	<option>결제방법 선택 ▼</option>
+                                    </select>
+
                                 </div>
                             </div>
                             

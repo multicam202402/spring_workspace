@@ -10872,3 +10872,903 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2024-04-18 11:00:39,212 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
 2024-04-18 11:00:39,212 [Worker-98] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-04-18 11:00:39,213 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:12:21,684 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:12:21,685 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:12:21,688 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:12:21,690 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:12:27,892 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:12:27,892 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:12:27,893 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:12:27,894 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:13:20,449 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:13:20,450 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:13:20,452 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:13:20,452 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:13:44,553 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:13:44,554 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:13:44,556 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:13:44,557 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:14:10,618 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:14:10,619 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:14:10,621 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:14:10,623 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:14:23,934 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:14:23,935 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:14:23,937 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:14:23,938 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:14:52,076 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:14:52,078 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:14:52,080 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:14:52,081 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:15:03,327 [Worker-106] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:15:03,329 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:15:03,331 [Worker-106] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:15:03,332 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:19:04,558 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:19:04,559 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:19:04,559 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:19:04,560 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:20:23,482 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:20:23,482 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:20:23,484 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:20:23,485 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:21:44,079 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:21:44,081 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:21:44,082 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:21:44,084 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:27:31,658 [Worker-105] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:27:31,659 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:27:31,659 [Worker-105] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:27:31,660 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:27:47,376 [Worker-105] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:27:47,377 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:27:47,379 [Worker-105] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:27:47,379 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:27:50,026 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:27:50,028 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:27:50,030 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:27:50,030 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:29:45,818 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:29:45,820 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:29:45,821 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:29:45,822 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:30:00,045 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:30:00,047 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:30:00,049 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:30:00,051 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:30:35,757 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:30:35,757 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:30:35,758 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:30:35,759 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:30:42,293 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:30:42,294 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:30:42,295 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:30:42,296 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:30:54,379 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:30:54,380 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:30:54,382 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:30:54,383 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:31:47,932 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:31:47,933 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:31:47,933 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:31:47,934 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:31:56,030 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:31:56,030 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:31:56,031 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:31:56,031 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:32:00,697 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:32:00,697 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:32:00,698 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:32:00,699 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:32:26,171 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:32:26,172 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:32:26,175 [Worker-100] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:32:26,176 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:32:41,259 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:32:41,261 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:32:41,263 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:32:41,264 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:33:02,034 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:33:02,034 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:33:02,037 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:33:02,038 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:34:14,812 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:34:14,813 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:34:14,815 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:34:14,815 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:35:32,532 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:35:32,532 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:35:32,533 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:35:32,534 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:36:23,498 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:36:23,500 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:36:23,504 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:36:23,505 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:36:26,823 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:36:26,823 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:36:26,826 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:36:26,828 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:38:00,569 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:38:00,570 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:38:00,571 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:38:00,572 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:38:17,873 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:38:17,874 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:38:17,876 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:38:17,876 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:38:40,056 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:38:40,057 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:38:40,058 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:38:40,059 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:39:17,557 [Worker-116] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:39:17,559 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:39:17,561 [Worker-116] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:39:17,562 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:39:34,745 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:39:34,746 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:39:34,747 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:39:34,749 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:39:58,867 [Worker-113] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:39:58,867 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:39:58,868 [Worker-113] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:39:58,868 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:40:44,840 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:40:44,840 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:40:44,842 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:40:44,842 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:41:00,840 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:41:00,840 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:41:00,841 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:41:00,841 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:41:23,701 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:41:23,701 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:41:23,702 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:41:23,703 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:42:56,617 [Worker-113] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:42:56,618 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:42:56,619 [Worker-113] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:42:56,620 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:43:36,542 [Worker-118] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:43:36,543 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:43:36,545 [Worker-118] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:43:36,546 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:43:45,640 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:43:45,640 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:43:45,641 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:43:45,643 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:45:01,742 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:45:01,743 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:45:01,744 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:45:01,745 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:45:04,411 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:45:04,412 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:45:04,414 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:45:04,415 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:47:08,532 [Worker-121] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:47:08,533 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:47:08,535 [Worker-121] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:47:08,536 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:47:26,529 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:47:26,530 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:47:26,530 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:47:26,531 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:47:31,664 [Worker-113] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:47:31,666 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:47:31,668 [Worker-113] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:47:31,669 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:47:46,025 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:47:46,025 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:47:46,027 [Worker-114] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:47:46,028 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:54:39,292 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:54:39,293 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:54:39,295 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:54:39,296 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:55:28,396 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:55:28,397 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:55:28,400 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:55:28,401 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:55:36,267 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:55:36,267 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:55:36,269 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:55:36,270 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:57:02,177 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:57:02,178 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:57:02,181 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:57:02,182 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:58:06,763 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:58:06,764 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:58:06,767 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:58:06,768 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 11:58:24,196 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:58:24,196 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 11:58:24,197 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 11:58:24,197 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:07:04,588 [Worker-142] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:07:04,590 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:07:04,592 [Worker-142] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:07:04,593 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:08:53,535 [Worker-141] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:08:53,537 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:08:53,538 [Worker-141] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:08:53,540 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:09:13,478 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:09:13,479 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:09:13,481 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:09:13,482 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:09:56,657 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:09:56,659 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:09:56,660 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:09:56,661 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:11:28,496 [Worker-146] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:11:28,497 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:11:28,499 [Worker-146] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:11:28,499 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:12:12,701 [Worker-148] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:12:12,702 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:12:12,704 [Worker-148] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:12:12,705 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:14:53,312 [Worker-148] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:14:53,313 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:14:53,314 [Worker-148] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:14:53,315 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:16:48,776 [Worker-141] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:16:48,778 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:16:48,779 [Worker-141] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:16:48,780 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:17:30,677 [Worker-146] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:17:30,678 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:17:30,679 [Worker-146] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:17:30,680 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:18:52,051 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:18:52,052 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:18:52,052 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:18:52,053 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:21:09,356 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:21:09,357 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:21:09,358 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:21:09,359 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:25:32,064 [Worker-150] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:25:32,065 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:25:32,067 [Worker-150] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:25:32,069 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:26:11,998 [Worker-151] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:26:12,000 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:26:12,002 [Worker-151] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:26:12,003 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:27:17,919 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:27:17,920 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:27:17,921 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:27:17,923 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:27:18,989 [Worker-153] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:27:18,990 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:27:18,990 [Worker-153] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:27:18,992 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:29:46,159 [Worker-141] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:29:46,160 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:29:46,161 [Worker-141] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:29:46,162 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:30:20,192 [Worker-141] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:30:20,192 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:30:20,194 [Worker-141] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:30:20,195 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:31:27,152 [Worker-156] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:31:27,153 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:31:27,154 [Worker-156] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:31:27,155 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:35:39,594 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:35:39,595 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:35:39,596 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:35:39,597 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:36:20,716 [Worker-153] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:36:20,717 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:36:20,718 [Worker-153] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:36:20,719 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:36:31,990 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:36:31,990 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:36:31,991 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:36:31,992 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:39:16,253 [Worker-162] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:39:16,255 [Worker-162] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:39:16,258 [Worker-162] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:39:16,259 [Worker-162] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:40:37,864 [Worker-163] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:40:37,865 [Worker-163] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:40:37,866 [Worker-163] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:40:37,867 [Worker-163] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:44:19,927 [Worker-162] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:44:19,929 [Worker-162] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:44:19,930 [Worker-162] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:44:19,932 [Worker-162] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 13:46:21,384 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:46:21,385 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 13:46:21,386 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 13:46:21,386 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:02:42,505 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:02:42,505 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:02:42,506 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:02:42,507 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:02:59,645 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:02:59,645 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:02:59,647 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:02:59,650 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:04:01,906 [Worker-170] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:04:01,906 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:04:01,907 [Worker-170] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:04:01,908 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:05:10,023 [Worker-170] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:05:10,024 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:05:10,024 [Worker-170] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:05:10,025 [Worker-170] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:09:27,338 [Worker-169] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:09:27,339 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:09:27,339 [Worker-169] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:09:27,340 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:12:30,814 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:12:30,815 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:12:30,818 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:12:30,818 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:13:38,257 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:13:38,258 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:13:38,259 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:13:38,261 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:16:07,267 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:16:07,267 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:16:07,269 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:16:07,270 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:16:37,457 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:16:37,458 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:16:37,459 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:16:37,460 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:19:49,318 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:19:49,320 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:19:49,324 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:19:49,326 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:20:18,877 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:20:18,878 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:20:18,879 [Worker-174] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:20:18,881 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:20:25,237 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:20:25,238 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:20:25,239 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:20:25,241 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:20:41,810 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:20:41,811 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:20:41,812 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:20:41,813 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:20:50,503 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:20:50,504 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:20:50,505 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:20:50,505 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:21:32,988 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:21:32,989 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:21:32,991 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:21:32,991 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:22:57,674 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:22:57,675 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:22:57,676 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:22:57,677 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:23:53,255 [Worker-182] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:23:53,256 [Worker-182] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:23:53,256 [Worker-182] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:23:53,257 [Worker-182] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:25:27,812 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:25:27,813 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:25:27,814 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:25:27,815 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:30:36,374 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:30:36,374 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:30:36,375 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:30:36,376 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:30:42,635 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:30:42,635 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:30:42,636 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:30:42,638 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:31:16,097 [Worker-182] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:31:16,098 [Worker-182] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:31:16,099 [Worker-182] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:31:16,100 [Worker-182] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:31:39,508 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:31:39,509 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:31:39,510 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:31:39,511 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:31:48,300 [Worker-190] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:31:48,301 [Worker-190] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:31:48,303 [Worker-190] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:31:48,304 [Worker-190] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:33:08,966 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:33:08,966 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:33:08,967 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:33:08,968 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:34:14,081 [Worker-192] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:34:14,083 [Worker-192] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:34:14,086 [Worker-192] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:34:14,087 [Worker-192] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:34:57,351 [Worker-189] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:34:57,352 [Worker-189] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:34:57,352 [Worker-189] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:34:57,354 [Worker-189] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:35:28,264 [Worker-189] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:35:28,265 [Worker-189] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:35:28,266 [Worker-189] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:35:28,268 [Worker-189] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:37:58,900 [Worker-196] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:37:58,901 [Worker-196] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:37:58,902 [Worker-196] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:37:58,903 [Worker-196] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:39:57,043 [Worker-200] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:39:57,044 [Worker-200] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:39:57,045 [Worker-200] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:39:57,045 [Worker-200] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:40:46,090 [Worker-201] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:40:46,091 [Worker-201] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:40:46,092 [Worker-201] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:40:46,093 [Worker-201] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:42:22,226 [Worker-200] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:42:22,227 [Worker-200] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:42:22,229 [Worker-200] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:42:22,230 [Worker-200] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:44:07,128 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:44:07,128 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:44:07,129 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:44:07,130 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:44:18,262 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:44:18,262 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:44:18,263 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:44:18,264 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:44:28,121 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:44:28,122 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:44:28,123 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:44:28,125 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:46:05,192 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:46:05,194 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:46:05,198 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:46:05,201 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:46:59,277 [Worker-192] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:46:59,279 [Worker-192] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:46:59,281 [Worker-192] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:46:59,283 [Worker-192] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:47:27,882 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:47:27,883 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:47:27,885 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:47:27,886 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:49:09,047 [Worker-208] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:49:09,048 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:49:09,049 [Worker-208] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:49:09,049 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:49:27,702 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:49:27,703 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:49:27,705 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:49:27,706 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:49:35,946 [Worker-205] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:49:35,947 [Worker-205] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:49:35,949 [Worker-205] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:49:35,950 [Worker-205] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:50:07,482 [Worker-205] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:50:07,483 [Worker-205] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:50:07,486 [Worker-205] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:50:07,487 [Worker-205] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 14:50:32,081 [Worker-204] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:50:32,081 [Worker-204] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 14:50:32,083 [Worker-204] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 14:50:32,084 [Worker-204] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:04:11,811 [Worker-211] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:04:11,812 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:04:11,815 [Worker-211] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:04:11,816 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:04:30,634 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:04:30,636 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:04:30,637 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:04:30,638 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:06:22,566 [Worker-211] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:06:22,568 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:06:22,569 [Worker-211] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:06:22,570 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:06:45,881 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:06:45,881 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:06:45,883 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:06:45,883 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:07:22,816 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:07:22,816 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:07:22,819 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:07:22,820 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:07:43,238 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:07:43,239 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:07:43,240 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:07:43,240 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:08:06,338 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:08:06,339 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:08:06,340 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:08:06,341 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:09:15,147 [Worker-205] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:09:15,147 [Worker-205] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:09:15,148 [Worker-205] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:09:15,149 [Worker-205] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:09:17,342 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:09:17,342 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:09:17,343 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:09:17,344 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:09:30,669 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:09:30,670 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:09:30,671 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:09:30,672 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:09:46,596 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:09:46,597 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:09:46,598 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:09:46,599 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:10:56,890 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:10:56,890 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:10:56,891 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:10:56,891 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:11:10,993 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:11:10,995 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:11:10,997 [Worker-217] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:11:10,997 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:11:35,773 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:11:35,773 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:11:35,774 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:11:35,774 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:11:53,518 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:11:53,519 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:11:53,520 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:11:53,521 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:12:15,417 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:12:15,418 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:12:15,419 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:12:15,420 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:15:07,188 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:15:07,190 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:15:07,193 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:15:07,194 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:16:26,164 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:16:26,165 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:16:26,166 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:16:26,167 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:16:47,232 [Worker-205] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:16:47,233 [Worker-205] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:16:47,235 [Worker-205] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:16:47,237 [Worker-205] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:17:16,644 [Worker-198] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:17:16,645 [Worker-198] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:17:16,646 [Worker-198] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:17:16,647 [Worker-198] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:23:35,345 [Worker-220] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:23:35,345 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:23:35,347 [Worker-220] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:23:35,347 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:25:13,642 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:25:13,642 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:25:13,644 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:25:13,644 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:27:59,829 [Worker-230] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:27:59,830 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:27:59,831 [Worker-230] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:27:59,833 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:28:17,001 [Worker-220] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:28:17,003 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:28:17,004 [Worker-220] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:28:17,004 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:28:46,402 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:28:46,403 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:28:46,404 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:28:46,405 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:32:07,325 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:32:07,325 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:32:07,326 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:32:07,326 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:34:03,859 [Worker-234] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:34:03,860 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:34:03,862 [Worker-234] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:34:03,863 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:34:55,065 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:34:55,066 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:34:55,066 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:34:55,066 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:35:23,528 [Worker-236] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:35:23,528 [Worker-236] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:35:23,529 [Worker-236] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:35:23,529 [Worker-236] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:35:59,458 [Worker-236] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:35:59,460 [Worker-236] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:35:59,461 [Worker-236] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:35:59,462 [Worker-236] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:36:54,584 [Worker-237] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:36:54,586 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:36:54,588 [Worker-237] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:36:54,589 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:39:43,503 [Worker-232] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:39:43,503 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:39:43,504 [Worker-232] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:39:43,505 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:40:23,038 [Worker-235] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:40:23,039 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:40:23,040 [Worker-235] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:40:23,040 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:41:10,142 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:41:10,143 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:41:10,144 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:41:10,144 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:42:17,646 [Worker-235] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:42:17,647 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:42:17,648 [Worker-235] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:42:17,649 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:43:22,214 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:43:22,216 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:43:22,218 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:43:22,219 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:46:19,745 [Worker-232] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:46:19,746 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:46:19,748 [Worker-232] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:46:19,749 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:46:31,544 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:46:31,547 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:46:31,549 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:46:31,550 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:46:45,550 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:46:45,551 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:46:45,552 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:46:45,553 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:47:17,536 [Worker-240] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:47:17,537 [Worker-240] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:47:17,538 [Worker-240] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:47:17,539 [Worker-240] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:48:31,202 [Worker-240] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:48:31,203 [Worker-240] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:48:31,205 [Worker-240] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:48:31,205 [Worker-240] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:49:18,699 [Worker-241] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:49:18,700 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:49:18,701 [Worker-241] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:49:18,702 [Worker-241] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:50:07,685 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:50:07,686 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:50:07,686 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:50:07,687 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:50:34,486 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:50:34,486 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:50:34,487 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:50:34,488 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 15:50:56,294 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:50:56,295 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 15:50:56,298 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 15:50:56,300 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:02:34,534 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:02:34,535 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:02:34,536 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:02:34,536 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:03:52,302 [Worker-249] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:03:52,303 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:03:52,304 [Worker-249] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:03:52,305 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:04:18,552 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:04:18,553 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:04:18,553 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:04:18,554 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:04:37,229 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:04:37,230 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:04:37,231 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:04:37,232 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:05:08,430 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:05:08,431 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:05:08,432 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:05:08,433 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:07:42,758 [Worker-249] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:07:42,759 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:07:42,759 [Worker-249] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:07:42,759 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:17:13,789 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:17:13,790 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:17:13,792 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:17:13,794 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:17:18,836 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:17:18,837 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:17:18,837 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:17:18,838 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:17:51,759 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:17:51,760 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:17:51,763 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:17:51,765 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:20:41,034 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:20:41,035 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:20:41,038 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:20:41,039 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:21:36,595 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:21:36,596 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:21:36,597 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:21:36,598 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:22:03,111 [Worker-245] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:22:03,112 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:22:03,114 [Worker-245] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:22:03,115 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:22:32,127 [Worker-254] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:22:32,128 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:22:32,129 [Worker-254] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:22:32,130 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:22:38,084 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:22:38,085 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:22:38,085 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:22:38,086 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:23:31,946 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:23:31,947 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:23:31,948 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:23:31,949 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:25:04,992 [Worker-245] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:25:04,992 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:25:04,993 [Worker-245] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:25:04,994 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:26:11,447 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:26:11,448 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:26:11,449 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:26:11,449 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:26:23,781 [Worker-256] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:26:23,782 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:26:23,782 [Worker-256] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:26:23,783 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:26:52,942 [Worker-254] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:26:52,944 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:26:52,945 [Worker-254] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:26:52,946 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:27:05,307 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:27:05,307 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:27:05,309 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:27:05,309 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:27:34,875 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:27:34,875 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:27:34,876 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:27:34,877 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:28:37,283 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:28:37,284 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:28:37,285 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:28:37,285 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:29:24,327 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:29:24,329 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:29:24,329 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:29:24,330 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:29:45,969 [Worker-256] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:29:45,971 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:29:45,974 [Worker-256] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:29:45,976 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:35:31,575 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:35:31,575 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:35:31,576 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:35:31,577 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:36:13,267 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:36:13,267 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:36:13,268 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:36:13,269 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:36:54,460 [Worker-262] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:36:54,460 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:36:54,461 [Worker-262] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:36:54,462 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:36:55,488 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:36:55,488 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:36:55,489 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:36:55,490 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:37:32,288 [Worker-245] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:37:32,289 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:37:32,289 [Worker-245] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:37:32,289 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:38:34,505 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:38:34,506 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:38:34,508 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:38:34,509 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:40:22,647 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:40:22,648 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:40:22,651 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:40:22,652 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:40:32,577 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:40:32,577 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:40:32,578 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:40:32,578 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:40:50,887 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:40:50,887 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:40:50,888 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:40:50,888 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:43:29,699 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:43:29,700 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:43:29,701 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:43:29,703 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:44:20,412 [Worker-268] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:44:20,413 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:44:20,414 [Worker-268] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:44:20,415 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:44:45,157 [Worker-267] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:44:45,159 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:44:45,161 [Worker-267] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:44:45,161 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:44:49,737 [Worker-269] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:44:49,737 [Worker-269] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:44:49,738 [Worker-269] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:44:49,739 [Worker-269] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:46:19,429 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:46:19,430 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:46:19,431 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:46:19,431 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:46:44,453 [Worker-267] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:46:44,453 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:46:44,455 [Worker-267] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:46:44,455 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:47:12,341 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:47:12,343 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:47:12,344 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:47:12,344 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:47:59,581 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:47:59,582 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:47:59,582 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:47:59,583 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:48:11,438 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:48:11,439 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:48:11,440 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:48:11,441 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:49:16,164 [Worker-267] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:49:16,164 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:49:16,165 [Worker-267] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:49:16,166 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:50:22,611 [Worker-268] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:50:22,611 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:50:22,612 [Worker-268] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:50:22,612 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:50:30,510 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:50:30,510 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:50:30,511 [Worker-260] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:50:30,511 [Worker-260] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 16:51:12,031 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:51:12,031 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 16:51:12,033 [Worker-270] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 16:51:12,034 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:04:18,845 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:04:18,846 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:04:18,848 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:04:18,849 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:06:35,680 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:06:35,681 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:06:35,687 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:06:35,688 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:07:55,431 [Worker-281] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:07:55,432 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:07:55,435 [Worker-281] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:07:55,436 [Worker-281] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:08:23,050 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:08:23,051 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:08:23,052 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:08:23,053 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:08:42,501 [Worker-283] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:08:42,502 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:08:42,504 [Worker-283] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:08:42,506 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:09:01,366 [Worker-282] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:09:01,366 [Worker-282] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:09:01,368 [Worker-282] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:09:01,369 [Worker-282] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:09:08,417 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:09:08,418 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:09:08,419 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:09:08,420 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:11:01,769 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:11:01,770 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:11:01,770 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:11:01,771 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:12:05,843 [Worker-283] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:12:05,844 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:12:05,845 [Worker-283] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:12:05,845 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:12:21,868 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:12:21,868 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:12:21,869 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:12:21,869 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:12:34,072 [Worker-285] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:12:34,073 [Worker-285] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:12:34,074 [Worker-285] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:12:34,074 [Worker-285] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:12:59,923 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:12:59,924 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:12:59,925 [Worker-280] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:12:59,925 [Worker-280] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:13:36,524 [Worker-283] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:13:36,525 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:13:36,526 [Worker-283] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:13:36,526 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources
+2024-04-18 17:13:56,193 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:13:56,195 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\main\resources
+2024-04-18 17:13:56,196 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-04-18 17:13:56,198 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\Mall\src\test\resources

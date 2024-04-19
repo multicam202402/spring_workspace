@@ -72,29 +72,6 @@
                                     <input type="text">
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="checkout__form__input">
-                                    <p>Country <span>*</span></p>
-                                    <input type="text">
-                                </div>
-                                <div class="checkout__form__input">
-                                    <p>Address <span>*</span></p>
-                                    <input type="text" placeholder="Street Address">
-                                    <input type="text" placeholder="Apartment. suite, unite ect ( optinal )">
-                                </div>
-                                <div class="checkout__form__input">
-                                    <p>Town/City <span>*</span></p>
-                                    <input type="text">
-                                </div>
-                                <div class="checkout__form__input">
-                                    <p>Country/State <span>*</span></p>
-                                    <input type="text">
-                                </div>
-                                <div class="checkout__form__input">
-                                    <p>Postcode/Zip <span>*</span></p>
-                                    <input type="text">
-                                </div>
-                            </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>Phone <span>*</span></p>
@@ -107,33 +84,7 @@
                                     <input type="text">
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="checkout__form__checkbox">
-                                    <label for="acc">
-                                        Create an acount?
-                                        <input type="checkbox" id="acc">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <p>Create am acount by entering the information below. If you are a returing
-                                        customer login at the <br />top of the page</p>
-                                    </div>
-                                    <div class="checkout__form__input">
-                                        <p>Account Password <span>*</span></p>
-                                        <input type="text">
-                                    </div>
-                                    <div class="checkout__form__checkbox">
-                                        <label for="note">
-                                            Note about your order, e.g, special noe for delivery
-                                            <input type="checkbox" id="note">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="checkout__form__input">
-                                        <p>Oder notes <span>*</span></p>
-                                        <input type="text"
-                                        placeholder="Note about your order, e.g, special noe for delivery">
-                                    </div>
-                                </div>
+                            
                             </div>
                         </div>
                         <div class="col-lg-4">

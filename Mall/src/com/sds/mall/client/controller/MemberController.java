@@ -1,6 +1,7 @@
 package com.sds.mall.client.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import javax.servlet.http.HttpSession;
 
@@ -37,6 +38,8 @@ public class MemberController {
 	
 	@Autowired
 	private GoogleLogin googleLogin;
+	
+	
 	
 	//로그인 폼 요청 처리 
 	@GetMapping("/member/loginform")
@@ -104,7 +107,7 @@ public class MemberController {
 	//파라미터를 전송하면, 구글이 다시 우리를 인증할 경우 최종 결과물로 token 을 보내온다..따라서 우리는 이 token을 받아서 
 	//고객의 정보를 언제든 접근할 수 있다..단 scope 에 등록한 범위 내에서만...(이메일, openid, 프로필사진 이었슴)
 	@GetMapping("/member/sns/google/callback")
-	public ModelAndView googleCallback(String code) {
+	public ModelAndView googleCallback(String code, HttpSession session) {
 		System.out.println("구글이 보내온 임시코드는 "+code);
 		
 		//구글이 보내온 임시code와 나의 client_id 및 client_secret를 조합하여, 구글 서버측에 token 발급을 요청해야 한다(Post)
@@ -159,6 +162,64 @@ public class MemberController {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		}
+		
+		//취득된 토큰을 이용하여 회원정보 접근
+		String userinfo_url = googleLogin.getUserinfo_url(); //회원정보 요청할 주소
+		
+		//Get방식으로 요청한다 
+		HttpHeaders headers2 = new HttpHeaders();//헤더 생성 
+		headers2.add("Authorization", "Bearer "+oAuthToken.getAccess_token());
+		HttpEntity entity = new HttpEntity(headers2);
+		
+		//비동기 요청 
+		RestTemplate restTemplate2 = new RestTemplate();
+		//restTemplate2.exchange(주소, 전송메서드, 어떤형으로받을지);
+		ResponseEntity<String> userEntity = restTemplate2.exchange(userinfo_url, HttpMethod.GET,entity ,String.class);
+		
+		String userBody = userEntity.getBody(); //요청 정보의 내용을 String 으로 받아둔다 
+		System.out.println(userBody);
+		
+		//사용자 정보 파싱 및 추출 
+		ObjectMapper objectMapper2 = new ObjectMapper();
+		
+		HashMap<String, Object> userMap = new HashMap<String, Object>();
+		//파싱시작 
+		//Map에 보관된 사용자 정보 출력
+		String uid=null;
+		String email=null;
+		String nickname=null;
+		try {
+			userMap = objectMapper2.readValue(userBody, HashMap.class);
+			
+			uid = (String)userMap.get("id");
+			email = (String)userMap.get("email");
+			nickname = (String)userMap.get("name");
+			
+		} catch (JsonParseException e) {
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(uid);
+		System.out.println(email);
+		System.out.println(nickname);
+		Member member = new Member();
+		member.setUid(uid);
+		member.setEmail(email);
+		member.setNickname(nickname);
+		//토큰은 사용자가 로그인할때마다, 값이 변경되는 임시코드이다. 따라서 개발자가 회원목록을 관리자에서 보고싶다면 토큰만으로는
+		//해결되지 않는다...해결책) 중요한 정보는 우리 db에 저장해놓자 
+		//회원등록은 최초에 한번한 수행하고, 이미 DB에 회원이 존재한다면(이미 가입회원이므로) 로그인만 처리한다
+		Member dto = memberService.isSnSMember(member);
+		
+		if(dto !=null) { //이미 가입된 회원이라면..세션에 DTO 담아서 로그인 처리...
+			session.setAttribute("member", dto);
+		}else {//신규 가입이므로 우리 db insert
+			memberService.regist(member); //신규가입
 		}
 		
 		return null;

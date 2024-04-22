@@ -211,18 +211,21 @@ public class MemberController {
 		member.setUid(uid);
 		member.setEmail(email);
 		member.setNickname(nickname);
+		member.setSns(memberService.selectByName("google"));
+		
 		//토큰은 사용자가 로그인할때마다, 값이 변경되는 임시코드이다. 따라서 개발자가 회원목록을 관리자에서 보고싶다면 토큰만으로는
 		//해결되지 않는다...해결책) 중요한 정보는 우리 db에 저장해놓자 
 		//회원등록은 최초에 한번한 수행하고, 이미 DB에 회원이 존재한다면(이미 가입회원이므로) 로그인만 처리한다
 		Member dto = memberService.isSnSMember(member);
 		
-		if(dto !=null) { //이미 가입된 회원이라면..세션에 DTO 담아서 로그인 처리...
-			session.setAttribute("member", dto);
-		}else {//신규 가입이므로 우리 db insert
+		if(dto ==null){//신규 가입이므로 우리 db insert
 			memberService.regist(member); //신규가입
+			dto = member; //세션에 담을 dto를, 기존 Member에 채워진 정보를 이용하여 대입
 		}
 		
-		return null;
+		session.setAttribute("member", dto);
+		ModelAndView mav = new ModelAndView("redirect:/");
+		return mav;
 	}
 	
 	

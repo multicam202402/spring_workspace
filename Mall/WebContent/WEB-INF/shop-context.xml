@@ -16,6 +16,8 @@
 
 	
 	<context:component-scan base-package="com.sds.mall.client.controller"/>
+	<context:component-scan base-package="com.sds.mall.sns"/>
+	
 	<mvc:annotation-driven/>
 	<mvc:resources location="/resources/" mapping="/static/**"/>
 	
@@ -54,13 +56,13 @@
 	
 	
 	<!-- 구글 로그인 관련 정보  -->
-	<bean class="com.sds.mall.sns.GoogleLogin">
-		<property name="endpoint" value="https://accounts.google.com/o/oauth2/v2/auth"/>
-		<property name="client_id" value="1039004131739-dob62u2ckfceq3ur89k5ulj2u6nhdr2g.apps.googleusercontent.com"/>
-		<property name="client_secret" value="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"/>
-		<property name="redirect_uri" value="http://localhost:7777/member/sns/google/callback"/>
+	<bean id="googleLogin" class="com.sds.mall.sns.GoogleLogin">
+		<property name="endpoint" 			value="https://accounts.google.com/o/oauth2/v2/auth"/>
+		<property name="client_id" 			value="1039004131739-dob62u2ckfceq3ur89k5ulj2u6nhdr2g.apps.googleusercontent.com"/>
+		<property name="client_secret" 	value="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"/>
+		<property name="redirect_uri" 		value="http://localhost:7777/member/sns/google/callback"/>
 		<property name="response_type" value="code"/>
-		<property name="scope" value="https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"/>    
+		<property name="scope" 				value="https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"/>    
 		
 	</bean>
 

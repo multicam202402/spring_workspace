@@ -3,7 +3,11 @@ package com.sds.mall.client.controller;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -78,6 +82,35 @@ public class MemberController {
 		session.invalidate();
 		
 		return "redirect:/";
+	}
+	
+	
+	//사용자들이 최초 인증화면을 요청하거나, 인증화면 이후부터 로그인을 요청할때마다 구글 IDP가 우리에게 역으로 
+	//요청이 들어오는데, 이 요청을 처리한다.. 
+	//구글이 발급한 임시코드를 받아서, 우리가 보유한 client_secret 포함한 정보를 응답 정보로  POST 방식으로 구성하여 
+	//파라미터를 전송하면, 구글이 다시 우리를 인증할 경우 최종 결과물로 token 을 보내온다..따라서 우리는 이 token을 받아서 
+	//고객의 정보를 언제든 접근할 수 있다..단 scope 에 등록한 범위 내에서만...(이메일, openid, 프로필사진 이었슴)
+	@GetMapping("/member/sns/google/callback")
+	public ModelAndView googleCallback(String code) {
+		System.out.println("구글이 보내온 임시코드는 "+code);
+		
+		//구글이 보내온 임시code와 나의 client_id 및 client_secret를 조합하여, 구글 서버측에 token 발급을 요청해야 한다(Post)
+		//Post 요청이 필요한 이유는 header+body 구성해서 요청할 것이므로..
+		
+		/*--------------------------
+		 Post 방식의 머리 및 몸체 구성하기 (주의 html이 아닌 Java 코드 ,즉 html은 form 태그를 통해 자동으로 head,bofdy )
+		 를 구성해주지만, 현재는 java코드로 작성해야 하므로 개발자가 일일이 header  및 body 구성코드를 작성해야 한다.. 
+		--------------------------*/
+		HttpHeaders headers=new HttpHeaders();//머리 객체 생성 
+		headers.add("Content-Type", "application/x-www-form-urlencoded"); // form태그 사용시 자동 설정했던것임..
+		
+		//몸 만들기 
+		//바디의 내용 구성시 파라미터=값, 파라미터=값의 반복이므로,  Map으로 구성 
+		MultiValueMap<String, String> params=new LinkedMultiValueMap<String, String>();
+		
+		HttpEntity httpEntity=new HttpEntity("몸구성내용 즉 파라미터들과 값", headers);
+		
+		return null;
 	}
 	
 	

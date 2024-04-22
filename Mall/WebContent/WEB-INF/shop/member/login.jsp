@@ -136,7 +136,8 @@
 			url:"/rest/member/authform/"+sns,
 			type:"get",
 			success:function(result, status, xhr){
-				console.log("인증 주소는 ", result);
+				alert("인증 주소는 "+result);
+				
 				location.href=result;
 			}
 		});

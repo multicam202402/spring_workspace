@@ -1,10 +1,14 @@
 package com.sds.mall.client.controller;
 
+import java.io.IOException;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -12,11 +16,17 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sds.mall.domain.Member;
 import com.sds.mall.exception.MemberException;
 import com.sds.mall.model.member.MemberService;
+import com.sds.mall.sns.GoogleLogin;
+import com.sds.mall.sns.GoogleOAuthToken;
 
 //회원과 관련된 요청을 전담하는 하위 컨트롤러 
 @Controller
@@ -24,6 +34,9 @@ public class MemberController {
 	
 	@Autowired
 	private MemberService memberService;
+	
+	@Autowired
+	private GoogleLogin googleLogin;
 	
 	//로그인 폼 요청 처리 
 	@GetMapping("/member/loginform")
@@ -107,8 +120,46 @@ public class MemberController {
 		//몸 만들기 
 		//바디의 내용 구성시 파라미터=값, 파라미터=값의 반복이므로,  Map으로 구성 
 		MultiValueMap<String, String> params=new LinkedMultiValueMap<String, String>();
+		params.add("code", code); //내가 받은 코드 그대로 보낸다 
+		params.add("client_id", googleLogin.getClient_id()); // 
+		params.add("client_secret", googleLogin.getClient_secret()); // 
+		params.add("redirect_uri", googleLogin.getRedirect_uri()); // 
+		params.add("grant_type", googleLogin.getGrant_type()); // 
 		
-		HttpEntity httpEntity=new HttpEntity("몸구성내용 즉 파라미터들과 값", headers);
+		
+		HttpEntity httpEntity=new HttpEntity(params, headers);
+		
+		//토큰 요청 시도 (비동기 객체를 생성하여, 비동기방식으로 서버에 토큰을 얻어오자)
+		RestTemplate restTemplate=new RestTemplate();
+		
+		//exchange(주소, 몸체내용, 방식, 응답받을자료형);
+		String token_request_url = googleLogin.getToken_request_url();
+		
+		//서버와의 비동기 통신을 마치고 나면, 드뎌 토큰이 들어있다
+		ResponseEntity<String> responseEntity=restTemplate.exchange(token_request_url, HttpMethod.POST , httpEntity, String.class);
+		
+		//응답 정보에서 토큰 추출하기 왜 추출하나? 사용자 정보를 서버에서 조회하려고
+		String body = responseEntity.getBody(); //개발자가 exchage() 메서드의 매개변수 끝에 String.class로 명시했으므로, 응답결과가 String 이다
+		System.out.println("토큰이 포함된 String 응답 정보 "+body);
+		
+		//응답정보가  String 형이므로, 그 안에 들어있는 access_token 를 추출하려면, JSON 으로 파싱이 되어야 한다..
+		ObjectMapper objectMapper = new ObjectMapper(); //JSON 파서
+		
+		//파싱할때마다 소모되는 객체이므로 @Autowired 대상 아님
+		GoogleOAuthToken oAuthToken=null;
+		
+		//파싱 시작 
+		try {
+			//파싱이 완료되면, GoogleOAuthToken의 인스턴스를 반환한다.
+			oAuthToken = objectMapper.readValue(body, GoogleOAuthToken.class); //인수1: 파싱대상문자열, 인수2: 옮겨담을 객체형
+			System.out.println("구글로 부터 인증 후 받은 토큰은 "+oAuthToken.getAccess_token());
+		} catch (JsonParseException e) {
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 		return null;
 	}

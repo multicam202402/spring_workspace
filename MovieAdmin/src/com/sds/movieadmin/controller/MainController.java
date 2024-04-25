@@ -12,6 +12,6 @@ public class MainController {
 		
 		System.out.println("메인 요청");
 		
-		return null;
+		return "admin/index";
 	}
 }

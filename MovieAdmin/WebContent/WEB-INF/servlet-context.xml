@@ -22,6 +22,7 @@
 	
 	<!-- Spring MVC 여러 기능을 지원 받을지  -->
 	<mvc:annotation-driven/>
+	<mvc:resources location="/resources/" mapping="/static/**"/>
 	
 </beans>
 

@@ -16,7 +16,7 @@ public class SampleController {
 	@GetMapping(value="/movie/sample1", produces="application/json;charset=UTF-8")
 	public String sample1() {
 	    // 파라메터 설정
-		String curPage = "1";					//현재페이지
+		String curPage = "";					//현재페이지
 		String itemPerPage = "";		//결과row수
 		String movieNm = "";						//영화명
 		String directorNm = "";				//감독명

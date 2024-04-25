@@ -23,15 +23,16 @@
 
     <ResourceLink 
     	global="jndi/movie" 
-		name="jndi/mysql"
+		name="jndi/movie"
 		type="javax.sql.DataSource" />
-		
+<!-- 		
     <ResourceLink 
     	global="jndi/mysql" 
 		name="jndi/mysql"
 		type="javax.sql.DataSource" />
 
-    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+ -->
+     <!-- Uncomment this to disable session persistence across Tomcat restarts -->
     <!--
     <Manager pathname="" />
     -->

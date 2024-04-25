@@ -24,19 +24,19 @@
 		            <div class="form-group row">
 		                <label for="inputEmail3" class="col-sm-2 col-form-label">ID</label>
 		                <div class="col-sm-10">
-		                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+		                    <input type="text" class="form-control" placeholder="Your ID" name="admin_id">
 		                </div>
 		            </div>
 		            <div class="form-group row">
 		                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
 		                <div class="col-sm-10">
-		                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+		                    <input type="password" class="form-control" placeholder="Password" name="admin_pwd">
 		                </div>
 		            </div>
 		            <div class="form-group row">
 		                <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
 		                <div class="col-sm-10">
-		                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+		                    <input type="text" class="form-control" placeholder="Your Name" name="admin_name">
 		                </div>
 		            </div>
 		            
@@ -44,8 +44,8 @@
 		        </div>
 		        <!-- /.card-body -->
 		        <div class="card-footer">
-		            <button type="submit" class="btn btn-info">로그인</button>
-		            <button type="submit" class="btn btn-info">관리자 등록</button>
+		            <button type="submit" class="btn btn-info" id="bt_login">로그인</button>
+		            <button type="submit" class="btn btn-info" id="bt_regist">관리자 등록</button>
 		            
 		        </div>
 		        <!-- /.card-footer -->
@@ -60,3 +60,34 @@
 
 </body>
 </html>
+<script type="text/javascript">
+	//비동기 등록 요청
+	function regist(){
+		$.ajax({
+			url:"/admin", 
+			type:"post",
+			data:$("form").serialize(),
+			success:function(result, status, xhr){
+				alert("관리자 인증 성공");
+				location.href="/admin/main";
+			},
+			error:function(xhr, status, err){
+				alert("관리자 인증 실패");
+			}
+		});			
+	}
+	
+	$(function(){
+		$("#bt_regist").click(function(){
+			regist();			
+		});
+	});
+
+</script>
+
+
+
+
+
+
+

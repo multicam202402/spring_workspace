@@ -40,6 +40,21 @@
 	
 	<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" initialSize="0" maxIdle="20" maxTotal="20" maxWaitMillis="5000" minIdle="5" name="jndi/mysql" password="" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mall?characterEncoding=utf-8" username="root"/>
   
+	<Resource 
+		name="jndi/movie" 
+		auth="Container" 
+		driverClassName="com.mysql.jdbc.Driver" 
+		initialSize="0" 
+		maxIdle="20" 
+		maxTotal="20" 
+		maxWaitMillis="5000" 
+		minIdle="5" 
+		username="root"
+		password="" 
+		type="javax.sql.DataSource" 
+		url="jdbc:mysql://localhost:3306/movie?characterEncoding=utf-8" 
+		/>
+  
   
   </GlobalNamingResources>
 

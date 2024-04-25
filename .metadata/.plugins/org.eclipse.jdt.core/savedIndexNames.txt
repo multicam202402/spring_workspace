@@ -19,7 +19,6 @@ INDEX VERSION 1.130+D:\spring_workspace\.metadata\.plugins\org.eclipse.jdt.core
 3811450397.index
 1988596012.index
 1543950876.index
-1326603949.index
 210417509.index
 632852464.index
 2214191435.index
@@ -38,10 +37,8 @@ INDEX VERSION 1.130+D:\spring_workspace\.metadata\.plugins\org.eclipse.jdt.core
 2255601460.index
 2989131810.index
 4144004752.index
-4294503837.index
 1630269332.index
 763783998.index
-41425239.index
 833209021.index
 4143678654.index
 1951517558.index
@@ -54,8 +51,6 @@ INDEX VERSION 1.130+D:\spring_workspace\.metadata\.plugins\org.eclipse.jdt.core
 1383655117.index
 3685395675.index
 1170583417.index
-3437203136.index
-1334231389.index
 3965244329.index
 2200043798.index
 2192766665.index

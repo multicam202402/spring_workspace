@@ -9,20 +9,9 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 	<!--어떠한 HandlerMapping 을 쓸지 : 자동적으로 적용됨 -->
-	
-	<!--어떠한 ViewResolver 를 쓸지 -->
-	<bean id="viewResolver" 
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-		p:prefix="/WEB-INF/"
-		p:suffix=".jsp"/>
-		
-	
 	<!-- 자동으로 인스턴스 생성할 검색 대상 패키지 -->
 	<context:component-scan base-package="com.sds.movieadmin.controller"/>
 	
-	<!-- Spring MVC 여러 기능을 지원 받을지  -->
-	<mvc:annotation-driven/>
-	<mvc:resources location="/resources/" mapping="/static/**"/>
 	
 </beans>
 

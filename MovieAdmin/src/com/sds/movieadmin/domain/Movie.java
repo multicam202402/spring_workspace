@@ -25,7 +25,7 @@ public class Movie {
 	
 	//영화 웹요청 파라미터
 	private String curPage = "";//현재페이지
-	private String itemPerPage = "";//결과row수
+	private String itemPerPage = "100";//결과row수
 	private String directorNm = "";//감독명
 	private String openStartDt = "";//개봉연도 시작조건 ( YYYY )
 	private String openEndDt = "";//개봉연도 끝조건 ( YYYY )	

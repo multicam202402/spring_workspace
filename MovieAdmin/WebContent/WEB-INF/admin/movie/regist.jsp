@@ -80,7 +80,7 @@
 							<div class="form-group" data-select2-id="29">
 								
 								<select name="repNationCd" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-									<option value="0">국가 선택 ▼</option>
+									<option value="">국가 선택 ▼</option>
 									<%for(Nation nation : nationList){ %>
 									<option value="<%=nation.getFullCd()%>"><%=nation.getKorNm() %></option>
 									<%}%>
@@ -93,7 +93,7 @@
 							<div class="form-group" data-select2-id="29">
 								
 								<select name="movieTypeCdArr" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-									<option value="0">영화 유형 선택 ▼</option>
+									<option value="">영화 유형 선택 ▼</option>
 									<%for(MovieType movieType : movieTypeList){ %>
 									<option value="<%=movieType.getFullCd()%>"><%=movieType.getKorNm() %></option>
 									<%} %>
@@ -104,7 +104,11 @@
 						<!-- 카드안의 열 begin -->	
 						<div class="col-md-2" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
-								<button type="button" class="btn btn-primary" id="bt_search">검색</button>
+								
+								<button type="button" class="btn btn-primary" id="bt_search">
+									<span></span>검색
+								</button>
+																
 							</div>
 						</div>
 						<!-- 카드안의 열 end -->
@@ -197,6 +201,10 @@
 			tag +="<option value='"+movie.movieCd+"'>"+movie.movieNm+"</option>";
 		}
 		
+		$("#bt_search span").toggleClass("spinner-border spinner-border-sm"); //제거
+		
+		$("#movie_name").prop("disabled", false);
+		
 		$("#movie_name").html(tag);
 	}
 	
@@ -217,7 +225,15 @@
 	}
 	
 	$(function(){
+		$("#movie_name").prop("disabled", true);
+		
 		$("#bt_search").click(function(){
+			
+			//검색토글
+			$("#bt_search span").toggleClass("spinner-border spinner-border-sm");
+			
+			$("#movie_name").prop("disabled", true); //비활성화
+			
 			searchMovie();
 		});
 		

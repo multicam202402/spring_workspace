@@ -95,7 +95,7 @@
 						<!-- 카드안의 열 begin -->	
 						<div class="col-md-2" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
-								<button class="btn btn-primary">검색</button>
+								<button type="button" class="btn btn-primary">검색</button>
 							</div>
 						</div>
 						<!-- 카드안의 열 end -->
@@ -106,25 +106,8 @@
 					
 					<!-- 입력 폼이 나올 row 시작  -->
 					<div class="row">
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="상품명" name="product_name">
-							</div>
-						</div>
 						
 						<div class="col-md-12">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="브랜드" name="brand">
-							</div>
-						</div>
-						
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="number" class="form-control" placeholder="가격" name="price">
-							</div>
-						</div>
-						
-						<div class="col-md-6">
 							<div class="form-group">
 								<select name="color_name" multiple class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="Black">Black</option>
@@ -134,15 +117,10 @@
 								</select>
 							</div>
 						</div>
-						
-						<div class="col-md-6">
+					
+						<div class="col-md-12">
 							<div class="form-group">
-								<select name="size_name" multiple class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-									<option value="95">95</option>
-									<option value="100">100</option>
-									<option value="105">105</option>
-									<option value="110">110</option>
-								</select>
+								<input type="text" class="form-control" placeholder="상품명" name="product_name">
 							</div>
 						</div>
 						
@@ -152,11 +130,6 @@
 							</div>
 						</div>
 						
-						<div class="col-md-12">
-							<div class="form-group">
-								<textarea id="content" class="form-control" name="detail"></textarea>
-							</div>
-						</div>
 					</div>
 						
 					<div class="row">						

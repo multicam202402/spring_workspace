@@ -1,14 +1,13 @@
 package com.sds.movieadmin.controller;
 
-import java.util.HashMap;
-
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import kr.or.kobis.kobisopenapi.consumer.rest.KobisOpenAPIRestService;
-import kr.or.kobis.kobisopenapi.consumer.rest.exception.OpenAPIFault;
+import kr.or.kobis.kobisopenapi.consumer.soap.movie.MovieAPIServiceImplService;
+import kr.or.kobis.kobisopenapi.consumer.soap.movie.MovieInfoResult;
+import kr.or.kobis.kobisopenapi.consumer.soap.movie.OpenAPIFault;
 
 @RestController
 public class SampleController {
@@ -66,6 +65,20 @@ public class SampleController {
 			e.printStackTrace();
 		}
 		return movieTypeCdResponse;
+	}
+	
+	//샘플4  영화 한편 조회   /movie/222013
+	@GetMapping(value="/movie/{moviecd}" , produces="application/json;charset=UTF-8")
+	public MovieInfoResult sample4(@PathVariable("moviecd") String moviecd) {
+		MovieInfoResult movieInfoResult = null;
+		
+		try {
+			movieInfoResult = new MovieAPIServiceImplService().getMovieAPIServiceImplPort().searchMovieInfo(key, moviecd);
+		} catch (OpenAPIFault e) {
+			e.printStackTrace();
+		}
+		
+		return movieInfoResult;
 	}
 	
 }	

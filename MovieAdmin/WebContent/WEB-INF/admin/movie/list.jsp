@@ -1,9 +1,9 @@
-<%@page import="com.sds.mall.domain.Product"%>
+<%@page import="com.sds.movieadmin.domain.Movie"%>
 <%@page import="java.util.List"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
-	
-	
+	List<Movie> movieList=(List)request.getAttribute("movieList");
+	out.print("가져온 영화 수는 "+movieList);
 %>
 <!DOCTYPE html>
 <html lang="en">

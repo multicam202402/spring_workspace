@@ -30,6 +30,12 @@ public class MovieController {
 	@GetMapping("/movie/registform")
 	public String getRegistForm() {
 		
+		//국가 목록 가져오기 
+		
+		
+		//영화 유형 가져오기
+		
+		
 		return "admin/movie/regist";
 	}
 }

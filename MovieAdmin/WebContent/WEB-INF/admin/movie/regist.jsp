@@ -77,7 +77,7 @@
 							<div class="form-group" data-select2-id="29">
 								
 								<select name="top" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-									<option value="0">상위 카테고리 선택 ▼</option>
+									<option value="0">국가 선택 ▼</option>
 									<option value=""></option>
 								</select>
 							</div>
@@ -88,6 +88,7 @@
 							<div class="form-group" data-select2-id="29">
 								
 								<select id="sub" name="subCategory.subcategory_idx" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+									<option value="0">영화 유형 선택 ▼</option>
 								</select>
 							</div>
 						</div>
@@ -109,11 +110,9 @@
 						
 						<div class="col-md-12">
 							<div class="form-group">
-								<select name="color_name" multiple class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-									<option value="Black">Black</option>
+								<select name="color_name"  class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+									<option value="Black">영화 선택 ▼</option>
 									<option value="White">White</option>
-									<option value="Gray">Gray</option>
-									<option value="Orange">Orange</option>
 								</select>
 							</div>
 						</div>

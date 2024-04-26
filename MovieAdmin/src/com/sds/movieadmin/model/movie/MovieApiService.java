@@ -61,6 +61,16 @@ public class MovieApiService {
 	---------------------------------------------------------*/
 	public List getNationList() {
 		
+		String nationCdResponse = null;
+		
+		try {
+			nationCdResponse = kobisOpenAPIRestService.getComCodeList(true,"2204");
+			//JSON 스트링에 불과한 데이터를 JSON으로 파싱한 후, 자바 객체로 다시 변환..
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 		return null;
 	}
 	

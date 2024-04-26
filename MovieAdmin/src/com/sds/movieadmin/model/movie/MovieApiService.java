@@ -2,6 +2,8 @@ package com.sds.movieadmin.model.movie;
 
 import java.util.List;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,7 +32,13 @@ public class MovieApiService {
 		    System.out.println(movieCdResponse);
 		    
 		    //json 문자열을 자바 객체로 변환 
-		    //JSONParser parser = new JSONParser();
+		    JSONParser parser = new JSONParser();
+		    JSONObject json =(JSONObject)parser.parse(movieCdResponse); //가장 바깥쪽 JSON 반환
+		    json = (JSONObject)json.get("movieListResult");//그 다음 안쪽 JSON 반환
+		    JSONArray array = (JSONArray)json.get("movieList"); //영화 배열 반환
+		    
+		    System.out.println("영화 목록의 수는 "+array.size());
+		    
 		    
 		} catch (Exception e) {
 			e.printStackTrace();

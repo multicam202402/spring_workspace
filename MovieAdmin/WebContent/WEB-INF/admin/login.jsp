@@ -61,10 +61,34 @@
 </body>
 </html>
 <script type="text/javascript">
+	
+	//비동기로 로그인 요청
+	function login(){
+		$.ajax({
+			url:"/auth/admin",
+			type:"post",
+			data:$("form").serialize(),
+			success:function(result, status, xhr){
+				alert("인증 성공");
+				//관리자 메인 보낼 예정 location.href="/";
+			},
+			error:function(xhr, status, err){
+				alert("인증실패");
+			}
+			
+		});	
+	}
+	
 	$(function(){
+		$("#bt_login").click(function(){
+			login();
+		});
+		
 		$("#bt_regist").click(function(){
 			location.href="/admin/registform";
-		});		
+		});
+		
+		
 	});
 </script>
 

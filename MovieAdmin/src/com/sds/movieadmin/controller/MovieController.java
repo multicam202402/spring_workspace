@@ -34,8 +34,10 @@ public class MovieController {
 		List nationList = movieApiService.getNationList();
 		
 		//영화 유형 가져오기
+		List movieTypeList = movieApiService.getTypeList();
 		
 		model.addAttribute("nationList", nationList);
+		model.addAttribute("movieTypeList", movieTypeList);
 		
 		return "admin/movie/regist";
 	}

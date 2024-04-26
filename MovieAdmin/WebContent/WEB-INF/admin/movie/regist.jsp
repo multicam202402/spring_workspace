@@ -1,8 +1,10 @@
+<%@page import="com.sds.movieadmin.domain.MovieType"%>
 <%@page import="com.sds.movieadmin.domain.Nation"%>
 <%@page import="java.util.List"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
 	List<Nation> nationList = (List)request.getAttribute("nationList");
+	List<MovieType> movieTypeList = (List)request.getAttribute("movieTypeList");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,6 +94,9 @@
 								
 								<select id="sub" name="subCategory.subcategory_idx" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="0">영화 유형 선택 ▼</option>
+									<%for(MovieType movieType : movieTypeList){ %>
+									<option value="<%=movieType.getFullCd()%>"><%=movieType.getKorNm() %></option>
+									<%} %>
 								</select>
 							</div>
 						</div>

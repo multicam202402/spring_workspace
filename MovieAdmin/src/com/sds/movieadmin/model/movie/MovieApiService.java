@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.sds.movieadmin.domain.Movie;
+import com.sds.movieadmin.domain.MovieType;
 import com.sds.movieadmin.domain.Nation;
 
 import kr.or.kobis.kobisopenapi.consumer.rest.KobisOpenAPIRestService;
@@ -89,7 +90,25 @@ public class MovieApiService {
 	영화유형
 	---------------------------------------------------------*/
 	public List getTypeList() {
-		return null;
+		List<MovieType> movieTypeList=null;
+		String movieTypeCdResponse = null;
+		try {
+			movieTypeCdResponse = kobisOpenAPIRestService.getComCodeList(true,"2201");
+			
+			//String형을 JSON으로 파싱하기 (json simple)
+			JSONParser parser = new JSONParser(); //simple 파서 생성
+			JSONObject json = (JSONObject)parser.parse(movieTypeCdResponse);
+			JSONArray array = (JSONArray)json.get("codes");
+			
+			System.out.println(array);
+			
+			Gson gson = new Gson();
+			Type movieType = new TypeToken<List<MovieType>>() {}.getType();
+			movieTypeList = gson.fromJson(array.toJSONString(), movieType);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return movieTypeList;
 	}
 	
 	/*---------------------------------------------------------

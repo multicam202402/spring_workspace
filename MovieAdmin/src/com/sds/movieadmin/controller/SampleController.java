@@ -12,7 +12,7 @@ import kr.or.kobis.kobisopenapi.consumer.soap.movie.OpenAPIFault;
 @RestController
 public class SampleController {
 	// 발급키
-	String key = "8ac8ba9af16821f7cb3cab09288b6e18";
+	String key = "6621a466612aa701c749b417034901a3";
 	
 	// KOBIS 오픈 API Rest Client를 통해 호출
 	KobisOpenAPIRestService service = new KobisOpenAPIRestService(key);

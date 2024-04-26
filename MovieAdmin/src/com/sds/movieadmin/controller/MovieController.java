@@ -41,6 +41,8 @@ public class MovieController {
 		
 		return "admin/movie/regist";
 	}
+	
+	
 }
 
 

@@ -79,7 +79,7 @@
 						<div class="col-md-5" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
 								
-								<select name="top" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+								<select name="repNationCd" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="0">국가 선택 ▼</option>
 									<%for(Nation nation : nationList){ %>
 									<option value="<%=nation.getFullCd()%>"><%=nation.getKorNm() %></option>
@@ -92,7 +92,7 @@
 						<div class="col-md-5" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
 								
-								<select id="sub" name="subCategory.subcategory_idx" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+								<select name="movieTypeCdArr" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="0">영화 유형 선택 ▼</option>
 									<%for(MovieType movieType : movieTypeList){ %>
 									<option value="<%=movieType.getFullCd()%>"><%=movieType.getKorNm() %></option>
@@ -104,7 +104,7 @@
 						<!-- 카드안의 열 begin -->	
 						<div class="col-md-2" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
-								<button type="button" class="btn btn-primary">검색</button>
+								<button type="button" class="btn btn-primary" id="bt_search">검색</button>
 							</div>
 						</div>
 						<!-- 카드안의 열 end -->
@@ -118,10 +118,12 @@
 						
 						<div class="col-md-12">
 							<div class="form-group">
-								<select name="color_name"  class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+							
+								<select id="movie_name" name="color_name"  class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="Black">영화 선택 ▼</option>
 									<option value="White">White</option>
 								</select>
+								
 							</div>
 						</div>
 					
@@ -187,57 +189,36 @@
 </body>
 </html>
 <script type="text/javascript">
-	function getSubCategoryList(topcategory_idx){
-		//서버에 하위 카테고리 목록을 요청하되, 비동기 방식으로 요청하자
-		//select * from subcategory where topcategory_idx=3
-		$.ajax({
-			url:"/admin/subcategory/list?topcategory_idx="+topcategory_idx, 
-			type:"GET", 
-			success:function(result, status, xhr){
-				console.log("서버의 응답 정보는 " ,  result);
-				
-				//하위컨트롤러 sub라는 아이디를 갖느 select 박스에 채우자
-				let op="<option value=\"0\">하위 카테고리 선택 ▼</option>";
-				
-				//서버에서 전송받은 json 배열을 이용하여 아래의 option을 채우자
-				for(let i=0; i<result.length;i++){
-					let json = result[i];
-					op += "<option value=\""+json.subcategory_idx+"\">"+json.subname+"</option>";
-				}
-				$("#sub").html(op); //innerHTML
-				
-			}			
-		});		
-	} 
+	function movieRender(movieList){
+		let tag="<option>영화 선택 ▼</option>";
+		
+		for(let i=0;i<movieList.length;i++){
+			let movie = movieList[i]; //영화 한편 꺼내기
+			tag +="<option value='"+movie.movieCd+"'>"+movie.movieNm+"</option>";
+		}
+		
+		$("#movie_name").html(tag);
+	}
 	
-	//상품 입력 정보 전송 
-	function regist(){
-		$("form").attr({
-			action:"/admin/product/regist",
-			method:"post",
-			/*텍스트 데이터와 바이너리 데이터가 섞여 있는 복합 데이터를 전송하는 경우 반드시 enctype을 multipart/form-data*/
-			enctype:"multipart/form-data"
-		});
-		$("form").submit(); //전송
+	//비동기로 ,선택한 국가 및 영화유형 정보에 맞는 영화목록 가져오기 
+	function searchMovie(){
+		$.ajax({
+			url:"/search/movie",
+			type:"get",
+			data:$("form").serialize() ,
+			success: function(result, status, xhr){
+				//영화 select 박스에 동적으로 채우기 
+				movieRender(result);			
+			},
+			error:function(xhr, status, err){
+				
+			}
+		});	
 	}
 	
 	$(function(){
-		
-		$("#content").summernote({
-			height:200, 
-			placehodel:"상품 상세 설명 입력"
-		});
-		
-		//상위 카테고리의 아이템을 변경하면... 서브 카테고리 목록 가져오기 
-		$("select[name='top']").change(function(){
-			
-			console.log($(this).val());
-			
-			getSubCategoryList($(this).val());			
-		});
-		
-		$("#bt_regist").click(function(){
-			regist();
+		$("#bt_search").click(function(){
+			searchMovie();
 		});
 		
 	});

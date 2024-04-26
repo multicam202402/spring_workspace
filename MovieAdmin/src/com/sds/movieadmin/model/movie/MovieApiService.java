@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.sds.movieadmin.domain.Movie;
+import com.sds.movieadmin.domain.Nation;
 
 import kr.or.kobis.kobisopenapi.consumer.rest.KobisOpenAPIRestService;
 
@@ -61,17 +62,27 @@ public class MovieApiService {
 	---------------------------------------------------------*/
 	public List getNationList() {
 		
+		List<Nation> nationList=null;
+		
 		String nationCdResponse = null;
 		
 		try {
 			nationCdResponse = kobisOpenAPIRestService.getComCodeList(true,"2204");
 			//JSON 스트링에 불과한 데이터를 JSON으로 파싱한 후, 자바 객체로 다시 변환..
+			JSONParser parser = new JSONParser(); //simple 파서 생성
+			JSONObject json = (JSONObject)parser.parse(nationCdResponse);
+			JSONArray array = (JSONArray)json.get("codes");//국가 목록 배열 반환
+			
+			System.out.println(array);
+			
+			Gson gson = new Gson();
+			Type nationType = new TypeToken<List<Nation>>() {}.getType();
+			nationList = gson.fromJson(array.toJSONString(), nationType);
 			
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		return null;
+		return nationList;
 	}
 	
 	/*---------------------------------------------------------

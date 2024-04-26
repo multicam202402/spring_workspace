@@ -28,13 +28,14 @@ public class MovieController {
 	
 	//사이트 영화 등록폼 요청 처리 
 	@GetMapping("/movie/registform")
-	public String getRegistForm() {
+	public String getRegistForm(Model model) {
 		
 		//국가 목록 가져오기 
-		
+		List nationList = movieApiService.getNationList();
 		
 		//영화 유형 가져오기
 		
+		model.addAttribute("nationList", nationList);
 		
 		return "admin/movie/regist";
 	}

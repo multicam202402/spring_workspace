@@ -1,7 +1,8 @@
+<%@page import="com.sds.movieadmin.domain.Nation"%>
 <%@page import="java.util.List"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
-
+	List<Nation> nationList = (List)request.getAttribute("nationList");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,7 +79,9 @@
 								
 								<select name="top" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="0">국가 선택 ▼</option>
-									<option value=""></option>
+									<%for(Nation nation : nationList){ %>
+									<option value="<%=nation.getFullCd()%>"><%=nation.getKorNm() %></option>
+									<%}%>
 								</select>
 							</div>
 						</div>

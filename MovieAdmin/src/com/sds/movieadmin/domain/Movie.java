@@ -7,6 +7,7 @@ import lombok.Data;
 //open api 에서 가져온 영화 1건을 담게될 DTO
 @Data
 public class Movie {
+	private int movie_idx;
 	
 	//1편의 영화불러왔을때 사용할 변수
 	private String movieCd;
@@ -33,6 +34,9 @@ public class Movie {
 	private String prdtEndYear = "";//제작연도 끝조건    ( YYYY )
 	private String repNationCd = "";//대표국적코드 (공통코드서비스에서 '2204'로 조회된 국가코드)
 	private String[] movieTypeCdArr=null;//영화형태코드 배열 (공통코드서비스에서 '2201'로 조회된 영화형태코드)
+	
+	//이미지 웹상의 경로
+	private String url;
 	
 }
 

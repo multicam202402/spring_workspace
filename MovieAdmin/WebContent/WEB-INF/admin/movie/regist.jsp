@@ -123,9 +123,7 @@
 						<div class="col-md-12">
 							<div class="form-group">
 							
-								<select id="movie_name" name="color_name"  class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-									<option value="Black">영화 선택 ▼</option>
-									<option value="White">White</option>
+								<select id="movie_name" name="movieCd"  class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 								</select>
 								
 							</div>
@@ -133,7 +131,7 @@
 					
 						<div class="col-md-12">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="상품명" name="product_name">
+								<input type="text" class="form-control" placeholder="이미지 URL" name="url">
 							</div>
 						</div>
 						
@@ -224,6 +222,22 @@
 		});	
 	}
 	
+	//비동기 등록 요청 
+	function regist(){
+		$.ajax({
+			url:"/movie",
+			type:"post",
+			data:$("#form").serialize(),
+			success:function(result, status, xhr){
+				alert("등록 성공");
+			},
+			error:function(xhr, status, err){
+				alert("등록 실패");
+			}
+		
+		});			
+	}
+	
 	$(function(){
 		$("#movie_name").prop("disabled", true);
 		
@@ -237,6 +251,9 @@
 			searchMovie();
 		});
 		
+		$("#bt_regist").click(function(){
+			regist();
+		});
 	});
 </script>
 

@@ -38,7 +38,9 @@ public class RestAdminController {
 		//세션에 관리자 정보를 담아야 함..
 		session.setAttribute("admin", dto);
 		
-		return null;
+		ResponseEntity entity = ResponseEntity.status(HttpStatus.OK).build();
+		
+		return entity;
 	}
 	
 	@ExceptionHandler(AdminException.class)

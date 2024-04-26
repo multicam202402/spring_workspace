@@ -25,7 +25,18 @@ public class MovieController {
 		
 		return "admin/movie/list";
 	}
+	
+	//사이트 영화 등록폼 요청 처리 
+	@GetMapping("/movie/registform")
+	public String getRegistForm() {
+		
+		return "admin/movie/regist";
+	}
 }
+
+
+
+
 
 
 

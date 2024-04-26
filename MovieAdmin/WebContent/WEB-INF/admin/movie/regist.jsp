@@ -1,10 +1,7 @@
-<%@page import="com.sds.mall.domain.TopCategory"%>
 <%@page import="java.util.List"%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
-	
-	//제너릭으로 선언하여, 아래쪽 코드에서 형변환의 불편함이 없도록 하자 
-	List<TopCategory> topList = (List)request.getAttribute("topList");
+
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,24 +73,29 @@
 					<!-- 카드안의 행 begin -->
 					<div class="row">
 						<!-- 카드안의 열 begin -->	
-						<div class="col-md-6" data-select2-id="30">
+						<div class="col-md-5" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
 								
 								<select name="top" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 									<option value="0">상위 카테고리 선택 ▼</option>
-									<%for(TopCategory topCategory : topList){ %>
-									<option value="<%=topCategory.getTopcategory_idx()%>"><%=topCategory.getTopname() %></option>
-									<%} %>
+									<option value=""></option>
 								</select>
 							</div>
 						</div>
 						<!-- 카드안의 열 end -->
 						<!-- 카드안의 열 begin -->	
-						<div class="col-md-6" data-select2-id="30">
+						<div class="col-md-5" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
 								
 								<select id="sub" name="subCategory.subcategory_idx" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 								</select>
+							</div>
+						</div>
+						<!-- 카드안의 열 end -->
+						<!-- 카드안의 열 begin -->	
+						<div class="col-md-2" data-select2-id="30">
+							<div class="form-group" data-select2-id="29">
+								<button class="btn btn-primary">검색</button>
 							</div>
 						</div>
 						<!-- 카드안의 열 end -->

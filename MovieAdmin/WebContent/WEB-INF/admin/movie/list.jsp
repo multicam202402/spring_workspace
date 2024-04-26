@@ -3,7 +3,7 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%
 	List<Movie> movieList=(List)request.getAttribute("movieList");
-	out.print("가져온 영화 수는 "+movieList);
+	//out.print("가져온 영화 수는 "+movieList);
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,14 +85,15 @@
 		                        </tr>
 		                    </thead>
 		                    <tbody>
-		                    	<%for(int i=0;i<10;i++){%>
+		                    	<%for(int i=0;i<movieList.size();i++){%>
+		                    	<%Movie movie = movieList.get(i); %>
 		                        <tr>
 		                            <td><%=i%></td>
-		                            <td><%%></td>
-		                            <td></td>
-		                            <td></td>
-		                            <td></td>
-		                            <td></td>
+		                            <td><%=movie.getMovieCd()%></td>
+		                            <td><%=movie.getMovieNm() %></td>
+		                            <td><%=movie.getTypeNm() %></td>
+		                            <td><%=movie.getNationAlt() %></td>
+		                            <td><%=movie.getPrdtYear() %></td>
 		                        </tr>
 		                        <%} %>
 		                    </tbody>

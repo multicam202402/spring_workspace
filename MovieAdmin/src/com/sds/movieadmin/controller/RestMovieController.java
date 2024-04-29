@@ -57,6 +57,8 @@ public class RestMovieController {
 		
 		MultipartFile file = movie.getFile();
 		System.out.println(file.getOriginalFilename()); //업로드된 파일명 출력 확인
+		
+		//하드디스크에 저장....
 	
 		return null;
 	}

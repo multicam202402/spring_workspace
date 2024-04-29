@@ -41,19 +41,24 @@ public class FileManager {
 	}
 	
 	//파일저장(웹서버에 저장)
-	public void save(Movie movie) throws UploadException{
+	public String save(Movie movie) throws UploadException{
 		//Movie DTO에서 MultipartFile 을 꺼내어, 하드디스크에 저장하자 
-		MultipartFile file=movie.getFile(); //업로드된 파일이 저장된 객체 꺼내기 
+		MultipartFile file=movie.getFile(); //업로드된 파일이 저장된 객체 꺼내기
 		
+		String realPath=null;
+		String newName=null;
 		try {
-			String realPath = servletContext.getRealPath(savePath);
+			realPath = servletContext.getRealPath(savePath);
 			System.out.println(realPath);
-			file.transferTo(new File("d:/~~~~~~~/resources/upload/excel/32423434.xlsx"));
+			newName = createFilename(file.getOriginalFilename());
+			
+			file.transferTo(new File(realPath+newName));
+			
 		} catch (IllegalStateException | IOException e) {
 			e.printStackTrace();
 			throw new UploadException("업로드 실패", e);
 		}
-
+		return realPath+newName;
 	}
 	
 }

@@ -55,10 +55,7 @@ public class RestMovieController {
 	@PostMapping("/excel/movie")
 	public ResponseEntity registExcel(Movie movie) {
 		
-		MultipartFile file = movie.getFile();
-		System.out.println(file.getOriginalFilename()); //업로드된 파일명 출력 확인
-		
-		//하드디스크에 저장....
+		movieService.registExcel(movie);
 	
 		return null;
 	}

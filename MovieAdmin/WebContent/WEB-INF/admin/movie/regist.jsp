@@ -145,10 +145,10 @@
 						
 					<div class="row">						
 						<div class="col-sm-1">
-							<button class="btn btn-primary form-control" id="bt_regist">등록</button>
+							<button type="button" class="btn btn-primary form-control" id="bt_regist">등록</button>
 						</div>
 						<div class="col-sm-1">
-							<button class="btn btn-primary form-control" id="bt_list">목록</button>
+							<button type="button" class="btn btn-primary form-control" id="bt_list">목록</button>
 						</div>
 					</div>
 					<!-- 입력 폼이 나올 row 끝  -->
@@ -227,7 +227,7 @@
 		$.ajax({
 			url:"/movie",
 			type:"post",
-			data:$("#form").serialize(),
+			data:$("form").serialize(),
 			success:function(result, status, xhr){
 				alert("등록 성공");
 			},

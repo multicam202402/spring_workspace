@@ -81,12 +81,7 @@
   </div>
   <!-- /.content-wrapper -->
   
-	<%@ include file="../inc/footer.jsp" %>  
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
+  
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
@@ -97,36 +92,6 @@
 </body>
 </html>
 <script type="text/javascript">
-	function movieRender(movieList){
-		let tag="<option>영화 선택 ▼</option>";
-		
-		for(let i=0;i<movieList.length;i++){
-			let movie = movieList[i]; //영화 한편 꺼내기
-			tag +="<option value='"+movie.movieCd+"'>"+movie.movieNm+"</option>";
-		}
-		
-		$("#bt_search span").toggleClass("spinner-border spinner-border-sm"); //제거
-		
-		$("#movie_name").prop("disabled", false);
-		
-		$("#movie_name").html(tag);
-	}
-	
-	//비동기로 ,선택한 국가 및 영화유형 정보에 맞는 영화목록 가져오기 
-	function searchMovie(){
-		$.ajax({
-			url:"/search/movie",
-			type:"get",
-			data:$("form").serialize() ,
-			success: function(result, status, xhr){
-				//영화 select 박스에 동적으로 채우기 
-				movieRender(result);			
-			},
-			error:function(xhr, status, err){
-				
-			}
-		});	
-	}
 	
 	//비동기 등록 요청 
 	function regist(){
@@ -145,34 +110,15 @@
 	}
 	
 	
-	//팝업 창 띄우기 
-	function openWin(){
-		//자바스크립트의 객체 중, 가장 상위의 최상위 객체인 window 객체를 이용하여 팝업 창을 띄운다
-		//팝업의 이름이 있어야, 중복 새창이 뜨지 않음
-		window.open("url", "pop", "width=350, height=175");
-	}
+	
 	
 	$(function(){
-		$("#movie_name").prop("disabled", true);
-		
-		$("#bt_search").click(function(){
-			
-			//검색토글
-			$("#bt_search span").toggleClass("spinner-border spinner-border-sm");
-			
-			$("#movie_name").prop("disabled", true); //비활성화
-			
-			searchMovie();
-		});
-		
+	
 		$("#bt_regist").click(function(){
 			regist();
 		});
-		
-		$("#bt_excel").click(function(){
-			openWin(); //업로드 창 띄우기
-		});
-		
+
+
 	});
 </script>
 

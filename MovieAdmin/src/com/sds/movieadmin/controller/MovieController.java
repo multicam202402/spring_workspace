@@ -42,7 +42,11 @@ public class MovieController {
 		return "admin/movie/regist";
 	}
 	
-	
+	//엑셀 등록 폼 요청 처리 
+	@GetMapping("/movie/excel/registform")
+	public String getExcelForm() {
+		return "admin/movie/upload";
+	}
 }
 
 

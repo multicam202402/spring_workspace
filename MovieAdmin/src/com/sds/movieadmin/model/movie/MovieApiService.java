@@ -124,7 +124,7 @@ public class MovieApiService {
 		MovieInfoResult movieInfoResult = null;
 		
 		try {
-			movieInfoResult = new MovieAPIServiceImplService().getMovieAPIServiceImplPort().searchMovieInfo(key, movieCd);
+			movieInfoResult = new MovieAPIServiceImplService().getMovieAPIServiceImplPort().searchMovieInfo(key, movie.getMovieCd());
 			
 			movieInfoResult.getMovieInfo().getMovieNm(); //영화이름
 			movieInfoResult.getMovieInfo().getPrdtYear();//제작일 

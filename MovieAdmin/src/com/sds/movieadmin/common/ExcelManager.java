@@ -1,6 +1,7 @@
 package com.sds.movieadmin.common;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -10,12 +11,14 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Component;
 
+import com.sds.movieadmin.domain.Movie;
+
 @Component
 public class ExcelManager {
 	
 	//서버에 저장된 엑셀 파일을 접근? 하여 읽어들여, 자바의 List형태로 반환..
 	public List getMovieData(String excelPath) {
-		
+		List<Movie> movieList=new ArrayList<Movie>(); //엑셀의 데이터를 List로 옮기기 위해..
 		
 		try {
 			XSSFWorkbook book = new XSSFWorkbook(excelPath);//엑셀에 접근
@@ -36,16 +39,19 @@ public class ExcelManager {
 				
 				System.out.println((int)codeCell.getNumericCellValue()+" , "
 				+nameCell.getStringCellValue()+" , "+urlCell.getStringCellValue());
+				
+				//엑셀의 Row 한건은 Movie 한 객체에 담자
+				Movie movie = new Movie(); //empty.. 
+				
+				movie.setMovieCd(Integer.toString((int)codeCell.getNumericCellValue())); //영화코드
+				movie.setUrl(urlCell.getStringCellValue());//영화 URL
+				
+				movieList.add(movie); //리스트에 DTO 추가
 			}
-			
-			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}  
-		
-		
-		
-		return null;
+		return movieList;
 	}
 	
 }

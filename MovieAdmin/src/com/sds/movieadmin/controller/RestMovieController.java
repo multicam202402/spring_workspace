@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
 
 import com.sds.movieadmin.domain.Movie;
 import com.sds.movieadmin.exception.MovieException;
+import com.sds.movieadmin.exception.UploadException;
 import com.sds.movieadmin.model.movie.MovieApiService;
 import com.sds.movieadmin.model.movie.MovieService;
 
@@ -54,12 +54,17 @@ public class RestMovieController {
 	//엑셀로 일괄등록 하기
 	@PostMapping("/excel/movie")
 	public ResponseEntity registExcel(Movie movie) {
-		
 		movieService.registExcel(movie);
-	
-		return null;
+		ResponseEntity entity = ResponseEntity.status(HttpStatus.OK).build();
+		return entity;
 	}
 	
+	
+	@ExceptionHandler(UploadException.class)
+	public ResponseEntity handle(UploadException e) {
+		ResponseEntity entity = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+		return entity;
+	}
 	
 	@ExceptionHandler(MovieException.class)
 	public ResponseEntity handle(MovieException e) {

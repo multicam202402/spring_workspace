@@ -43,11 +43,17 @@ public class MovieServiceImpl implements MovieService{
 		//2) 저장된 엑셀을 읽기 
 		List<Movie> movieList = excelManager.getMovieData(excelPath);
 		
-		//3단계:  DAO에게 일시키기(엑셀의 영화 수만큼..)
+		//3단계 : 기존의 레코드가 있다면, 지우자
+		movieDAO.deleteAll();
+		
+		//4단계:  DAO에게 일시키기(엑셀의 영화 수만큼..)
 		for(Movie dto : movieList) { //dto에는 엑셀의 정보가 들어있다..
 			movieDAO.insert(dto); //대량 등록
 		}
 		
 	}
 	
+	//모두 삭제 
+	
 }
+

@@ -7,5 +7,9 @@
 		insert into movie(moviecd, url) values(#{movieCd}, #{url})
 	</insert>
 	
+	<!-- 모든 레코드 삭제 -->
+	<delete id="deleteAll">
+		delete from movie
+	</delete>
 
 </mapper>

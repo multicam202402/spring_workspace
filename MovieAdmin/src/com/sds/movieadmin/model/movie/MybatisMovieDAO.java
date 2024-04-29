@@ -21,4 +21,13 @@ public class MybatisMovieDAO implements MovieDAO{
 		}
 	}
 	
+	@Override
+	public void deleteAll() {
+		int result = sqlSessionTemplate.delete("Movie.deleteAll");
+	}
+	
 }
+
+
+
+

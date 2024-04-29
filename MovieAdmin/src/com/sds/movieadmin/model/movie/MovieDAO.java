@@ -5,5 +5,5 @@ import com.sds.movieadmin.domain.Movie;
 public interface MovieDAO {
 	
 	public void insert(Movie movie);
-	
+	public void deleteAll();
 }

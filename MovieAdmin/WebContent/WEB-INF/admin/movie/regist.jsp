@@ -212,6 +212,8 @@
 </body>
 </html>
 <script type="text/javascript">
+	let win;
+	
 	function movieRender(movieList){
 		let tag="<option>영화 선택 ▼</option>";
 		
@@ -251,6 +253,7 @@
 			data:$("form").serialize(),
 			success:function(result, status, xhr){
 				alert("등록 성공");
+				win.close();
 			},
 			error:function(xhr, status, err){
 				alert("등록 실패");
@@ -264,7 +267,7 @@
 	function openWin(){
 		//자바스크립트의 객체 중, 가장 상위의 최상위 객체인 window 객체를 이용하여 팝업 창을 띄운다
 		//팝업의 이름이 있어야, 중복 새창이 뜨지 않음
-		window.open("/movie/excel/registform", "pop", "width=350, height=200");
+		win=window.open("/movie/excel/registform", "pop", "width=350, height=200");
 	}
 	
 	$(function(){

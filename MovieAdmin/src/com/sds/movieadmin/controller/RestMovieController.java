@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.sds.movieadmin.domain.Movie;
 import com.sds.movieadmin.exception.MovieException;
@@ -35,6 +36,7 @@ public class RestMovieController {
 		return movieList;
 	}
 	
+	//한편 등록
 	@PostMapping("/movie")
 	public ResponseEntity regist(Movie movie) {
 		
@@ -47,6 +49,19 @@ public class RestMovieController {
 		
 		return entity;
 	}
+	
+	
+	//엑셀로 일괄등록 하기
+	@PostMapping("/excel/movie")
+	public ResponseEntity registExcel(Movie movie) {
+		
+		MultipartFile file = movie.getFile();
+		System.out.println(file.getOriginalFilename()); //업로드된 파일명 출력 확인
+		
+		System.out.println();
+		return null;
+	}
+	
 	
 	@ExceptionHandler(MovieException.class)
 	public ResponseEntity handle(MovieException e) {

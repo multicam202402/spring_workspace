@@ -76,7 +76,7 @@
 					<!-- 카드안의 행 begin -->
 					<div class="row">
 						<!-- 카드안의 열 begin -->	
-						<div class="col-md-5" data-select2-id="30">
+						<div class="col-md-3" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
 								
 								<select name="repNationCd" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
@@ -89,7 +89,7 @@
 						</div>
 						<!-- 카드안의 열 end -->
 						<!-- 카드안의 열 begin -->	
-						<div class="col-md-5" data-select2-id="30">
+						<div class="col-md-3" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
 								
 								<select name="movieTypeCdArr" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
@@ -101,6 +101,13 @@
 							</div>
 						</div>
 						<!-- 카드안의 열 end -->
+						<div class="col-md-4" data-select2-id="30">
+							<div class="form-group" data-select2-id="29">
+								<input type="text" class="form-control" placeholder="영화명.." name="movieNm">
+							</div>
+						</div>
+						
+						
 						<!-- 카드안의 열 begin -->	
 						<div class="col-md-2" data-select2-id="30">
 							<div class="form-group" data-select2-id="29">
@@ -120,12 +127,22 @@
 					<!-- 입력 폼이 나올 row 시작  -->
 					<div class="row">
 						
-						<div class="col-md-12">
+						<div class="col-md-8">
 							<div class="form-group">
-							
 								<select id="movie_name" name="movieCd"  class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
 								</select>
-								
+							</div>
+						</div>
+						
+						<div class="col-md-2">
+							<div class="form-group">
+								<input type="text" class="form-control" id="movieCd" placeholder="영화코드">
+							</div>
+						</div>
+						
+						<div class="col-md-2">
+							<div class="form-group">
+								<input type="text" class="form-control" id="movieNm" placeholder="영화명">
 							</div>
 						</div>
 					
@@ -252,6 +269,16 @@
 	
 	$(function(){
 		$("#movie_name").prop("disabled", true);
+		
+		//영화정보가 출력되는 select박스에 change 이벤트 연결 
+		$("#movie_name").change(function(){
+			//select 박스의 값을 변경할때,영화명과 영화코드가 text박스에 노출 
+			$("#movieCd").val($(this).val());
+			
+			//select 박스의 선택된 option의 text 구하기 
+			let text = $(this).find("option:selected").text();
+			$("#movieNm").val(text);
+		});
 		
 		$("#bt_search").click(function(){
 			

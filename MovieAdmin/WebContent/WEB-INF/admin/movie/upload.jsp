@@ -48,13 +48,13 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="form-group">
-								<input type="file" class="form-control" name="photo">
+								<input type="file" class="form-control" name="file">
 							</div>
 						</div>
 					</div>
 					<div class="row">						
 						<div class="col-sm-1">
-							<button type="button" class="btn btn-primary form-control" id="bt_excel">엑셀등록</button>
+							<button type="button" class="btn btn-primary form-control" id="bt_excel">일괄등록</button>
 						</div>
 					</div>
 					<!-- 입력 폼이 나올 row 끝  -->
@@ -93,12 +93,25 @@
 </html>
 <script type="text/javascript">
 	
-	//비동기 등록 요청 
-	function regist(){
+	 
+	/*
+	비동기 업로드 요청
+	폼양식의 serialize() 는, 문자열로만 변경하므로 바이너리 파일은 전송할 수 없다..
+	해결책? FormData 바이너리 파일도 포함한 전송객체
+	*/
+	function upload(){
+		let fileData = $("form input[name='file']").prop("files")[0]; //파일 컴포넌트 접근, 만일 컴포넌트가 n개라면 n번째까지 사용가능
+		let formData = new FormData(); 
+		
+		//얻어온 파일 컴포넌트를 formData에 추가하기 
+		formData.append("file", fileData);
+
 		$.ajax({
-			url:"/movie",
+			url:"/excel/movie",
 			type:"post",
-			data:$("form").serialize(),
+			data:formData, 
+			contentType:false, //헤더값을 false로 놓아야 문자열로 처리하지 않음
+			processData:false, //문자열로 변한 금지(바이너리 파일이 포함된 경우 반드시 속성 지정)
 			success:function(result, status, xhr){
 				alert("등록 성공");
 			},
@@ -114,8 +127,8 @@
 	
 	$(function(){
 	
-		$("#bt_regist").click(function(){
-			regist();
+		$("#bt_excel").click(function(){
+			upload();
 		});
 
 

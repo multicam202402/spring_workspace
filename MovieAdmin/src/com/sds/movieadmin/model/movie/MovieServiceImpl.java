@@ -1,6 +1,7 @@
 package com.sds.movieadmin.model.movie;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,23 @@ public class MovieServiceImpl implements MovieService{
 	
 	@Autowired
 	private ExcelManager excelManager;//root-context.xml에서 이미 메모리에 올려놓음
+	
+	//영화진흥원 조회 서비스 객체 
+	@Autowired
+	private MovieApiService movieApiService;
+	
+	@Override
+	public int selectCount() {
+		return movieDAO.selectCount();
+	}
+	@Override
+	public List selectAll(Map map) {
+		List siteMovieList = movieDAO.selectAll(map); //우리 사이트에 등록된 목록...이 List 에 들어있는 Movie에는 
+		//  영화코드와 url만 존재함..따라서 영화코드를 이용하여 한건 가져오기 조회를 통해 비어있는 영화정보를 Movie dto 에 채워넣자
+		
+		
+		return null;
+	}
 	
 	//1건 등록
 	public void regist(Movie movie) throws MovieException{

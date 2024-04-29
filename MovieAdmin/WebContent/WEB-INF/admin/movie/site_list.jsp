@@ -77,6 +77,7 @@
 		                    <thead>
 		                        <tr>
 		                            <th>No</th>
+		                            <th>이미지</th>
 		                            <th>영화코드</th>
 		                            <th>영화명</th>
 		                            <th>영화유형</th>

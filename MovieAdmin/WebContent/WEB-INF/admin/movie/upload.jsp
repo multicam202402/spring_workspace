@@ -116,7 +116,14 @@
 				alert("등록 성공");
 			},
 			error:function(xhr, status, err){
-				alert("등록 실패");
+				
+				console.log("업로드  에러", xhr.status);
+				if(xhr.status==413){
+					alert("파일 용량을 확인해주세요");
+				}else{
+					alert("등록 실패");
+				}
+				
 			}
 		
 		});			

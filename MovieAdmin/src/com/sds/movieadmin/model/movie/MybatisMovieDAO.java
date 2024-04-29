@@ -1,5 +1,8 @@
 package com.sds.movieadmin.model.movie;
 
+import java.util.List;
+import java.util.Map;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -12,6 +15,15 @@ public class MybatisMovieDAO implements MovieDAO{
 	
 	@Autowired
 	private SqlSessionTemplate sqlSessionTemplate;
+	
+	
+	public int selectCount() {
+		return sqlSessionTemplate.selectOne("Movie.selectCount");
+	}
+	
+	public List selectAll(Map map) {
+		return sqlSessionTemplate.selectList("Movie.selectAll", map);
+	}
 	
 	public void insert(Movie movie) throws MovieException{
 		int result = sqlSessionTemplate.insert("Movie.insert", movie);

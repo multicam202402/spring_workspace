@@ -42,6 +42,13 @@ public class MovieController {
 		return "admin/movie/regist";
 	}
 	
+	//웹사이트에 등록된 영화 목록 가져오기 요청 처리 
+	@GetMapping("/movie/site/list")
+	public String getSiteList() {
+		
+		return "admin/movie/site_list";
+	}
+	
 	//엑셀 등록 폼 요청 처리 
 	@GetMapping("/movie/excel/registform")
 	public String getExcelForm() {

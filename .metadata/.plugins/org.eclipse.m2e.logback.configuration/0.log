@@ -20107,3 +20107,7 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2024-05-08 11:00:32,559 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\MovieAdmin\src\main\resources
 2024-05-08 11:00:32,561 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-05-08 11:00:32,561 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\MovieAdmin\src\test\resources
+2024-05-08 11:02:45,222 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-05-08 11:02:45,223 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\MovieAdmin\src\main\resources
+2024-05-08 11:02:45,224 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-05-08 11:02:45,225 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\spring_workspace\MovieAdmin\src\test\resources

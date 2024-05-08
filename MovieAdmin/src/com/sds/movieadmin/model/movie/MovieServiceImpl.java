@@ -13,6 +13,7 @@ import com.sds.movieadmin.common.FileManager;
 import com.sds.movieadmin.domain.Movie;
 import com.sds.movieadmin.exception.MovieException;
 import com.sds.movieadmin.exception.UploadException;
+import com.sds.movieadmin.model.mongo.MongoMovieDAO;
 
 @Service
 public class MovieServiceImpl implements MovieService{
@@ -29,6 +30,11 @@ public class MovieServiceImpl implements MovieService{
 	//영화진흥원 조회 서비스 객체 
 	@Autowired
 	private MovieApiService movieApiService;
+	
+	
+	@Autowired
+	private MongoMovieDAO mongoMovieDAO;
+	
 	
 	@Override
 	public int selectCount() {
@@ -65,7 +71,9 @@ public class MovieServiceImpl implements MovieService{
 		List<Movie> movieList = excelManager.getMovieData(excelPath);
 		
 		//3단계 : 기존의 레코드가 있다면, 지우자
-		movieDAO.deleteAll();
+		movieDAO.deleteAll(); //기존의 mysql의 모든 데이터 지우기 
+										
+		mongoMovieDAO.delete();//몽고DB 컬렉션의 document 들도 모두 지우기
 		
 		//4단계:  DAO에게 일시키기(엑셀의 영화 수만큼..)
 		for(Movie dto : movieList) { //dto에는 엑셀의 정보가 들어있다..
